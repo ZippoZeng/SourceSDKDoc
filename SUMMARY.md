@@ -12,7 +12,7 @@
   * [3、播放控制](features/play_control.md)
   * [4、其他设置选项](setting/README.md)
     * [LelinkSetting](setting/LelinkSetting.md)
-  * [5、镜像相关](features/53001-jing-xiang-xiang-guan.md)
+  * [5、镜像相关](features/mirror.md)
 * [三、增值功能](added_features.md)
   * [1、设备管理](added_features/device_manager.md)
 

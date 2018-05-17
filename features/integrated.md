@@ -1,11 +1,13 @@
-#SDK集成
-##0、依赖
+# SDK集成
 
-请将aar到工程中的libs中，
-![import_aar](/assets/import_aar.png)
+## 0、依赖
+
+请将aar到工程中的libs中，  
+![import\_aar](/assets/import_aar.png)  
 然后在module的build.gradle中添加以下配置
 
 在android节点中添加以下配置
+
 ```groovy
 repositories {
     flatDir {
@@ -13,14 +15,17 @@ repositories {
     }
 }
 ```
+
 在dependencies中添加以下配置
+
 ```groovy
 compile appcompat
 compile(name: 'source-sdk', ext: 'aar')
 ```
+
 接下来，您就可以调用我们的api了
 
-##1、初始化SDK
+## 1、初始化SDK
 
 ```java
 LelinkSetting lelinkSetting = new LelinkSetting.LelinkSettingBuilder(APPKEY, APPSECRET).build();
@@ -35,7 +40,7 @@ SDK初始化需要传入三个参数：
 
 关于APPKEY & APPSECRET 的获取，[1、申请APPKEY & APPSECRET](http://cdn.hpplay.com.cn/test/don/_book/jie-shou-duan-sdk-kai-fa-zhe-wen-dang/shen.html)
 
-##2、发现服务
+## 2、发现服务
 
 1\) 启动搜索服务
 
@@ -44,11 +49,13 @@ mLelinkServiceManager.browse(int browserType);
 ```
 
 其中browserType的取值为以下几种类型:
- - ILelinkServiceManager.TYPE_ALL：可以搜索到乐联和DLNA协议
- - ILelinkServiceManager.TYPE_LELINK：仅搜索乐联协议
- - ILelinkServiceManager.TYPE_DLNA：仅搜索DLNA协议
+
+* ILelinkServiceManager.TYPE\_ALL：可以搜索到乐联和DLNA协议
+* ILelinkServiceManager.TYPE\_LELINK：仅搜索乐联协议
+* ILelinkServiceManager.TYPE\_DLNA：仅搜索DLNA协议
 
 2\) 设置搜索服务状态监听
+
 ```java
 mLelinkServiceManager.setOnBrowseListener(mBrowseListener);
 ```
@@ -68,21 +75,25 @@ private IBrowseListener BrowserListener = new IBrowseListener() {
 
 其中list为搜索出来的结果信息，请根据这个结果信息来显示搜索到的设备列表。
 
-**PS：onBrowse是在子线程工作，以下接口回调，如无特殊说明，都是在子线城回调**
+**PS：onBrowse是在子线程工作，以下接口回调，如无特殊说明，都是在子线程回调**
 
-##3、连接服务
-1) 建立连接
+## 3、连接服务
+
+1\) 建立连接
+
 ```java
 LelinkPlayer leLinkPlayer = new LelinkPlayer(this);
 leLinkPlayer.connect(mLelinkServiceInfo, mConnectListener);
 ```
+
 2\) 连接服务状态监听
+
 ```java
 ILelinkService.IServiceListener connectListener = new ILelinkService.IServiceListener() {
-        
+
     @Override
     public void onConnect(LelinkServiceInfo serviceInfo) {
-        
+
     }
 
     @Override
@@ -91,28 +102,35 @@ ILelinkService.IServiceListener connectListener = new ILelinkService.IServiceLis
     }
 };
 ```
+
 3\) 关闭连接
+
 ```java
 leLinkPlayer.disConnect();
 ```
+
 4\) 获得正在连接的设备
+
 ```java
 leLinkPlayer.getConnectLelinkServiceInfos();
 ```
 
-##4、播控服务
+## 4、播控服务
+
 播控服务监听
 
 ```java
 leLinkPlayer.setPlayerListener(playerListener);
 ```
+
 playerListener为播控服务状态监听
+
 ```java
 ILelinkPlayerListener playerListener = new ILelinkPlayerListener() {
-     
+
         @Override
         public void onPlayStart(int linkType) {
-            
+
         }
 
         @Override
@@ -151,24 +169,29 @@ ILelinkPlayerListener playerListener = new ILelinkPlayerListener() {
         }
     };
 ```
-##4、释放资源
+
+## 4、释放资源
+
 当你想释放我们的sdk的时候，可以调用该方法进行释放
+
 ```java
 if (null != mLelinkServiceManager) {
     mLelinkServiceManager.release();
 }
 ```
 
+## 5、配置权限
 
-##5、配置权限
 如果Android系统为6.0以上，则需要动态申请一些权限：
-- android.permission.READ_PHONE_STATE
-- android.permission.WRITE_EXTERNAL_STORAGE
-- location
+
+* android.permission.READ\_PHONE\_STATE
+* android.permission.WRITE\_EXTERNAL\_STORAGE
+* location
 
 必须要有以上权限，否则会导致SDK功能异常
 
 以下为投屏SDK需要的权限，aar包自带有，无需再次配置
+
 ```xml
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
@@ -185,8 +208,10 @@ if (null != mLelinkServiceManager) {
 <uses-permission android:name="android.permission.CAPTURE_SECURE_VIDEO_OUTPUT" />
 ```
 
-##6、混淆
+## 6、混淆
+
 当需要编译打包混淆的时候，投屏SDK已混淆过，无效在对投屏SDK及其依赖的第三方jar包进行混淆，请添加以下乐播配置：
+
 ```
 ###androidasync
 -keep class com.koushikdutta.async.** { *; }
@@ -215,3 +240,6 @@ if (null != mLelinkServiceManager) {
 -keep class com.hpplay.**$*{*;}
 -dontwarn com.hpplay.**
 ```
+
+
+
