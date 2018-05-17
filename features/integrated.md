@@ -97,7 +97,7 @@ ILelinkService.IServiceListener connectListener = new ILelinkService.IServiceLis
     }
 
     @Override
-    public void onDisconnect(LelinkServiceInfo serviceInfo) {
+    public void onDisconnect(LelinkServiceInfo serviceInfo,int disConnectType) {
 
     }
 };
