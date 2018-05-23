@@ -68,3 +68,51 @@ leLinkPlayer.subVolume()
 ```java
 leLinkPlayer.release();
 ```
+
+##播放控制回调
+```java
+ILelinkPlayerListener playerListener = new ILelinkPlayerListener() {
+
+        @Override
+        public void onPlayStart(int linkType) {
+
+        }
+
+        @Override
+        public void onPlayPause() {
+
+        }
+
+        @Override
+        public void onPlayStop() {
+
+        }
+
+        @Override
+        public void onSeek(int pPosition) {
+
+        }
+
+        @Override
+        public void onInfo(int what, int extra) {
+
+        }
+
+        @Override
+        public void onError(int what, int extra) {
+            
+        }
+
+        @Override
+        public void onVolumeChanged(float percent) {
+
+        }
+
+        @Override
+        public void onPositionUpdate(long duration, long position) {
+
+        }
+    };
+```
+
+
