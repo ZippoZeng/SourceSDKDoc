@@ -240,10 +240,6 @@ if (null != mLelinkServiceManager) {
 -dontwarn org.kxml2.**
 -dontwarn org.xmlpull.**
 
-###Gson
--keep class com.google.gson.** { *; }
--dontwarn com.google.gson.**
-
 ###Lebo
 -keep class com.hpplay.**{*;}
 -keep class com.hpplay.**$*{*;}
