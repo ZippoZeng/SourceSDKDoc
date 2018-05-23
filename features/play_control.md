@@ -46,6 +46,9 @@ danmukuInfo.setFontsize(size);
 leLinkPlayer.sendDanmuku(danmukuInfo);
 ```
 
+##
+
+
 ##释放
 ```java
 leLinkPlayer.release();
