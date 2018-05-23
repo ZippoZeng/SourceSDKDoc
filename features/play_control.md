@@ -32,8 +32,8 @@ leLinkPlayer.seekTo(progress);
 leLlinkPlayer.setVolume(percent);
 ```
 percent（百分比，float类型）的取值范围为0~1
-<!--
 
+<!--
 ##是否支持弹幕
 ```java
 leLinkPlayer.isSupportDanmuku();
@@ -50,8 +50,14 @@ danmukuInfo.setFontsize(size);
 leLinkPlayer.sendDanmuku(danmukuInfo);
 ```
 -->
-##
-
+##增加音量
+```java
+leLinkPlayer.addVolume();
+```
+##减少音量
+```java
+leLinkPlayer.subVolume()
+```
 
 ##释放
 ```java
