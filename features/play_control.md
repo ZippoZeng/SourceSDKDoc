@@ -37,7 +37,7 @@ percent（百分比，float类型）的取值范围为0~1
 ```java
 leLinkPlayer.isSupportDanmuku();
 ```
-
+<!--
 ##发送弹幕
 ```java
 DanmukuInfo danmukuInfo = new DanmukuInfo();
@@ -46,7 +46,7 @@ danmukuInfo.setContent(text);
 danmukuInfo.setFontsize(size);
 leLinkPlayer.sendDanmuku(danmukuInfo);
 ```
-
+-->
 ##
 
 
