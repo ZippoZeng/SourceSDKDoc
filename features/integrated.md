@@ -79,6 +79,7 @@ private IBrowseListener BrowserListener = new IBrowseListener() {
 
 3) 关闭搜索
 ```java
+mLelinkServiceManager.stopBrowse();
 ```
 
 ## 3、连接服务
