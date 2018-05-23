@@ -32,11 +32,14 @@ leLinkPlayer.seekTo(progress);
 leLlinkPlayer.setVolume(percent);
 ```
 percent（百分比，float类型）的取值范围为0~1
+<!--
 
 ##是否支持弹幕
 ```java
 leLinkPlayer.isSupportDanmuku();
 ```
+-->
+
 <!--
 ##发送弹幕
 ```java
