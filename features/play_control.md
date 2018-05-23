@@ -27,6 +27,8 @@ leLinkPlayer.stop();
 ```java
 leLinkPlayer.seekTo(progress);
 ```
+progressd的单位为秒
+
 <!--
 ##音量控制
 ```java
