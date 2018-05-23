@@ -195,7 +195,7 @@ if (null != mLelinkServiceManager) {
 
 * android.permission.READ\_PHONE\_STATE
 * android.permission.WRITE\_EXTERNAL\_STORAGE
-* location
+* android.permission.ACCESS_FINE_LOCATION
 
 必须要有以上权限，否则会导致SDK功能异常
 
