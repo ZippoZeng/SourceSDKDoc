@@ -114,7 +114,7 @@ ILelinkPlayerListener playerListener = new ILelinkPlayerListener() {
         }
     };
 ```
-###onError
+###onError(int what, int extra)
 
 
 
