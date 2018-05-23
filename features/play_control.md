@@ -27,11 +27,14 @@ leLinkPlayer.stop();
 ```java
 leLinkPlayer.seekTo(progress);
 ```
+<!--
 ##音量控制
 ```java
 leLlinkPlayer.setVolume(percent);
 ```
 percent（百分比，float类型）的取值范围为0~1
+-->
+
 
 <!--
 ##是否支持弹幕
