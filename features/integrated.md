@@ -77,6 +77,9 @@ private IBrowseListener BrowserListener = new IBrowseListener() {
 
 **PS：onBrowse是在子线程工作，以下接口回调，如无特殊说明，都是在子线程回调**
 
+3) 关闭搜索
+
+
 ## 3、连接服务
 
 1\) 建立连接
