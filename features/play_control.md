@@ -117,7 +117,8 @@ ILelinkPlayerListener playerListener = new ILelinkPlayerListener() {
 ```
 ###onError(int what, int extra)
 ####what取值
-- LelinkPlayer.TYPE_PLAYER
+- LelinkPlayer.TYPE_PLAYER = 1
+
 ####extra取值
 - LelinkPlayer.CODE_TV_OFFLINE = -100,公网推送检测到接收端不在线
 - LelinkPlayer.CODE_FILE_NOT_EXISTET = -200,推送本地文件不存在
