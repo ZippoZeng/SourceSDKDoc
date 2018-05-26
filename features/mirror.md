@@ -3,9 +3,15 @@
 ```java
 mLelinkPlayer.prepareMirror(activity, mMirrorListener);
 ```
+##开始
 然后在Activity中的onActivityResult中做以下配置
 
 
-##开始
 
+```java
+if (LelinkPlayer.MIRROR_PERMISSION_CODE == requestCode) {
+    mLelinkPlayer.startMirror(requestCode, resultCode, data);
+    return;
+}
+```
 ##结束
