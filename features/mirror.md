@@ -1,7 +1,7 @@
 #镜像相关
 ##准备
 ```java
-mLelinkPlayer.prepareMirror(activity, mMirrorListener);
+lelinkPlayer.prepareMirror(activity, mMirrorListener);
 ```
 注册镜像状态的监听器
 ```java
@@ -27,5 +27,5 @@ protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 ```
 ##结束
 ```java
-  mLelinkPlayer.stopMirror();
+lelinkPlayer.stopMirror();
 ```
