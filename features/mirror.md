@@ -3,6 +3,17 @@
 ```java
 mLelinkPlayer.prepareMirror(activity, mMirrorListener);
 ```
+注册镜像状态的监听器
+```java
+private ILelinkPlayer.IMirrorStateChangeListener mMirrorListener = new ILelinkPlayer.IMirrorStateChangeListener() {
+
+    @Override
+    public void onStateChange(int state) {
+    
+    }
+
+};
+```
 ##开始
 然后在Activity中的onActivityResult中做以下配置
 ```java
