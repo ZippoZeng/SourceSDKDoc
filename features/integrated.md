@@ -1,9 +1,9 @@
-# SDK集成
+# 1、集成SDK
 
 ## 0、依赖
 
 请将aar到工程中的libs中，  
-![import\_aar](/assets/import_aar.png)  
+![import\_aar](../.gitbook/assets/import_aar.png)  
 然后在module的build.gradle中添加以下配置
 
 在android节点中添加以下配置
@@ -77,7 +77,8 @@ private IBrowseListener BrowserListener = new IBrowseListener() {
 
 **PS：onBrowse是在子线程工作，以下接口回调，如无特殊说明，都是在子线程回调**
 
-3) 关闭搜索
+3\) 关闭搜索
+
 ```java
 mLelinkServiceManager.stopBrowse();
 ```
@@ -107,10 +108,11 @@ ILelinkService.IServiceListener connectListener = new ILelinkService.IServiceLis
     }
 };
 ```
-其中disConnectType的取值为：
-- LelinkPlayer.CODE_DISCONNECT：断开连接成功
-- LelinkPlayer.CODE_CONNECT_FAILED：连接失败
 
+其中disConnectType的取值为：
+
+* LelinkPlayer.CODE\_DISCONNECT：断开连接成功
+* LelinkPlayer.CODE\_CONNECT\_FAILED：连接失败
 
 3\) 关闭连接
 
@@ -164,7 +166,7 @@ ILelinkPlayerListener playerListener = new ILelinkPlayerListener() {
 
         @Override
         public void onError(int what, int extra) {
-            
+
         }
 
         @Override
@@ -195,13 +197,13 @@ if (null != mLelinkServiceManager) {
 
 * android.permission.READ\_PHONE\_STATE
 * android.permission.WRITE\_EXTERNAL\_STORAGE
-* android.permission.ACCESS_FINE_LOCATION
+* android.permission.ACCESS\_FINE\_LOCATION
 
 必须要有以上权限，否则会导致SDK功能异常
 
 以下为投屏SDK需要的权限，aar包自带有，无需再次配置
 
-```xml
+```markup
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
 <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
@@ -221,7 +223,7 @@ if (null != mLelinkServiceManager) {
 
 当需要编译打包混淆的时候，投屏SDK已混淆过，无需在对投屏SDK及其依赖的第三方jar包进行混淆，请添加以下乐播配置：
 
-```
+```text
 ###androidasync
 -keep class com.koushikdutta.async.** { *; }
 -dontwarn com.koushikdutta.async.**
@@ -245,6 +247,4 @@ if (null != mLelinkServiceManager) {
 -keep class com.hpplay.**$*{*;}
 -dontwarn com.hpplay.**
 ```
-
-
 
