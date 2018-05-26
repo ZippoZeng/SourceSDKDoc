@@ -15,7 +15,7 @@ private ILelinkPlayer.IMirrorStateChangeListener mMirrorListener = new ILelinkPl
 };
 ```
 ##开始
-当出现权限提示框后，需点击确认，然后在Activity中的onActivityResult中配以下
+当出现权限提示框后，需点击确认，然后在Activity中的onActivityResult中配种下面选项
 ```java
  @Override
 protected void onActivityResult(int requestCode, int resultCode, Intent data) {
