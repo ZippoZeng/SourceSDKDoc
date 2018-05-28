@@ -171,10 +171,15 @@ ILelinkPlayerListener playerListener = new ILelinkPlayerListener() {
         public void onVolumeChanged(float percent) {
 
         }
-
+        
+        /**
+         * 进度更新回调
+         * @param duration 媒体资源总长度
+         * @param position 当前进度
+         */
         @Override
         public void onPositionUpdate(long duration, long position) {
-
+            
         }
     };
 ```
