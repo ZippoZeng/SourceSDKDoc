@@ -166,7 +166,11 @@ ILelinkPlayerListener playerListener = new ILelinkPlayerListener() {
         public void onError(int what, int extra) {
             
         }
-
+        
+        /**
+         * 音量变化回调
+         * @param percent 当前音量
+         */
         @Override
         public void onVolumeChanged(float percent) {
 
