@@ -108,7 +108,7 @@ ILelinkService.IServiceListener connectListener = new ILelinkService.IServiceLis
 };
 ```
 其中disConnectType的取值为：
-- LelinkPlayer.CODE_DISCONNECT：断开连接成功
+- LelinkPlayer.CODE_DISCONNECT：断开连接
 - LelinkPlayer.CODE_CONNECT_FAILED：连接失败
 
 
