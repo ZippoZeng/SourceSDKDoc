@@ -5,10 +5,10 @@ lelinkServiceInfo.getName();
 ```
 设备名称
 ##Ip
-获取ip
 ```java
 lelinkServiceInfo.getIp();
 ```
+获取接收端的ip
 ##getPort()
 获取端口
 ##isOneline
