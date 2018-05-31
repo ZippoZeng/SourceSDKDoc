@@ -52,7 +52,7 @@ mLelinkServiceManager.browse(int browserType);
 
 * ILelinkServiceManager.TYPE\_ALL：可以搜索到乐联和DLNA协议
 * ILelinkServiceManager.TYPE\_LELINK：仅搜索乐联协议
-* ILelinkServiceManager.TYPE\_DLNA：仅搜索DLNA协议
+//* ILelinkServiceManager.TYPE\_DLNA：仅搜索DLNA协议
 
 2\) 设置搜索服务状态监听
 
