@@ -1,10 +1,10 @@
 #LelinkServiceInfo参数说明
-##getName()
+##name
 ```java
 lelinkServiceInfo.getName();
 ```
 设备名称
-##getIp()
+##Ip
 获取ip
 ```java
 lelinkServiceInfo.getIp();
