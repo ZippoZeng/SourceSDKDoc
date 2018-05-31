@@ -3,6 +3,7 @@
 ```java
 lelinkServiceInfo.getName();
 ```
+设备名称
 
 ##isOneline
 ```java
