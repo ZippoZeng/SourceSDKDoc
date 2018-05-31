@@ -4,7 +4,7 @@
 lelinkServiceInfo.getName();
 ```
 设备名称
-##Ip
+##ip
 ```java
 lelinkServiceInfo.getIp();
 ```
