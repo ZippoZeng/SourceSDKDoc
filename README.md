@@ -4,10 +4,7 @@
 **文档版本** | **1.0.3**| 
 - | :-: | -: 
 SDK版本 | **3.0.4**
-Hermione Granger | Gryffindor
-Draco Malfoy | Slytherin
-版本：****
-日期：2018-05-23
+日期 | 2018-05-24
 
 乐播投屏SDK提供了接收支持多种投屏协议的服务，使用 iPhone、Android手机、Mac电脑、Windows PC都可以将其设备上的内容投屏到乐播投屏的SDK，支持的图片投屏、视频投屏、音乐投屏以及屏幕镜像数据。
 
