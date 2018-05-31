@@ -9,7 +9,6 @@ lelinkServiceInfo.getName();
 ```java
 lelinkServiceInfo.getIp();
 ```
-
 ##getPort()
 获取端口
 ##isOneline
