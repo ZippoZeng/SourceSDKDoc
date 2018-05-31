@@ -13,6 +13,7 @@
   * [4、其他设置选项](setting/README.md)
     * [LelinkSetting](setting/LelinkSetting.md)
   * [5、镜像相关](features/mirror.md)
+  * [6、Api说明](features/apishuo-ming.md)
 * [三、增值功能](added_features.md)
   * [1、设备管理](added_features/device_manager.md)
 
