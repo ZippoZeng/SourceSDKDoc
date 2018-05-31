@@ -1,4 +1,8 @@
 #LelinkServiceInfo参数说明
+##getName()
+```java
+lelinkServiceInfo.getName();
+```
 
 ##isOneline
 ```java
