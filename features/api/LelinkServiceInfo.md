@@ -4,7 +4,14 @@
 lelinkServiceInfo.getName();
 ```
 设备名称
+##getIp()
+获取ip
+```java
+lelinkServiceInfo.getIp();
+```
 
+##getPort()
+获取端口
 ##isOneline
 ```java
 lelinkServiceInfo.isOnLine();
