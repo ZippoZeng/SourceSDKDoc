@@ -11,7 +11,7 @@ private ILelinkMirrorListener mILelinkMirrorListener = new ILelinkMirrorListener
     public void onError(int what, int extra) {
         if (what == ILelinkMirrorListener.MIRROR_ERROR_INIT) {
             if (extra == ILelinkMirrorListener.MIRROR_ERROR_UNSUPPORTED) {
-                // 不支持镜像操作
+                // 不支持镜像操作：原因可能是版本小于5.0或不支持乐联协议
             } else if (extra == ILelinkMirrorListener.MIRROR_ERROR_REJECT_PERMISSION) {
                 // 拒绝了镜像权限
             }
