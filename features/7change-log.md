@@ -3,10 +3,15 @@
 ###连接接口
 ```java
 ILelinkService.IServiceListener变为IConnectListener
+lelinkPlayer.connect(lelinkServiceInfo,mConnectListener)变为lelinkPlayer.connect(lelinkServiceInfo)
 
 ```
 ###播放状态回调
 ILelinkPlayerListener有几个接口变动
 ```java
+onPlayStart(int linkType)变为onStart()
+onPlayPause()变为onPause()
+onPlayStop()变为onStop()
+onSeek(int position)变为onSeekComplete(int position)
 
 ```
