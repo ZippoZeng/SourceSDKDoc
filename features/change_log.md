@@ -9,4 +9,5 @@ connect(lelinkServiceInfo,connectListener)
 ```
 变为
 ```java
+connect(lelinkServiceInfo)
 ```
