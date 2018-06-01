@@ -4,6 +4,8 @@
 ```java
 ILelinkService.IServiceListener变为IConnectListener
 其中
+onConnect(LelinkServiceInfo serviceInfo)变为onConnect(LelinkServiceInfo serviceInfo,int extra)
+onDisconnect(LelinkServiceInfo serviceInfo,int disConnectType)变为onDisconnect(LelinkServiceInfo serviceInfo,int what,int extra)
 
 lelinkPlayer.connect(lelinkServiceInfo,mConnectListener)变为lelinkPlayer.connect(lelinkServiceInfo)
 添加方法：
