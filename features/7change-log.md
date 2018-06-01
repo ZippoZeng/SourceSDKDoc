@@ -5,3 +5,8 @@
 ILelinkService.IServiceListener变为IConnectListener
 
 ```
+###播放状态回调
+ILelinkPlayerListener有几个接口变动
+```java
+
+```
