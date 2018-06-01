@@ -1,35 +1,17 @@
 #ChangeLog
 
 ##3.0.6
-###1. 连接接口：
-`ILelinkService.IServiceListener`变为`IConnectListener`
-###2. 连接方法：
+###1. 连接
 ```java
-connect(lelinkServiceInfo,connectListener);
+ILelinkService.IServiceListener变为IConnectListener
+connect(lelinkServiceInfo,connectListener)-->connect(lelinkServiceInfo)
+
 ```
-变为
+###2. ILelinkPlayerListener方法修改
 ```java
-connect(lelinkServiceInfo);
-```
-###3. ILelinkPlayerListener方法修改
-```java
- onPushStart(int linkType)--->onStart()
-```
-start方法
-```java
-onPushStart(int linkType);
-```
-变为
-```java
-onStart();
-```
-stop方法
-```java
-onPushStop();
-```
-变为
-```java
-onStop();
+onPushStart(int linkType)--->onStart()
+onPushStop()-->onStop();
+onSeek()-->onSeekComplete();
 ```
 
 

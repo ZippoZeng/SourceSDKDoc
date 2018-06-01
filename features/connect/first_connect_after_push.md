@@ -16,7 +16,7 @@ leLinkPlayer.start();
 ```
 3、断开连接
 ```java
-leLinkPlayer.disConnect(mLelinkServiceInfo, mConnectListener);
+leLinkPlayer.disConnect(mLelinkServiceInfo);
 ```
 
 ##二维码连接
