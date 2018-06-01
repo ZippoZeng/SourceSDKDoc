@@ -7,3 +7,4 @@
 ```java
 connect(lelinkServiceInfo,connectListener)
 ```
+变为
