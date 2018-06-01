@@ -45,5 +45,5 @@ lelinkPlayer.stopMirror();
 - LelinkMirrorManager.BITRATE_MID：中比特率
 - LelinkMirrorManager.BITRATE_LOW：低分辨率
 ###setAudioMirrorOnOff(boolean isOn)
-- true：代表
+- true：录制声音
 - false
