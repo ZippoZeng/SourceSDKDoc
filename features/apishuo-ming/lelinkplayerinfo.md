@@ -1,6 +1,12 @@
 #LelinkPlayerInfo
 ##url
 代表要推送的网络url连接
+##type
+表示推送的文件的类型
+-LelinkPlayerInfo.TYPE_AUDIO：音频文件
+-
+-
+
 ##localPath
 代表要推送的本地文件地址
 ##LelinkServiceInfo
