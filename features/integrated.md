@@ -88,7 +88,7 @@ mLelinkServiceManager.stopBrowse();
 
 ```java
 LelinkPlayer leLinkPlayer = new LelinkPlayer(this);
-leLinkPlayer.connect(mLelinkServiceInfo, mConnectListener);
+leLinkPlayer.connect(mLelinkServiceInfo);
 ```
 
 2\) 连接服务状态监听
@@ -153,7 +153,7 @@ ILelinkPlayerListener playerListener = new ILelinkPlayerListener() {
         }
 
         @Override
-        public void onSeek(int pPosition) {
+        public void onSeekComplete(int pPosition) {
 
         }
 
