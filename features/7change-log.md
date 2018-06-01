@@ -4,7 +4,8 @@
 ```java
 ILelinkService.IServiceListener变为IConnectListener
 lelinkPlayer.connect(lelinkServiceInfo,mConnectListener)变为lelinkPlayer.connect(lelinkServiceInfo)
-
+添加方法：
+lelinkPlayer.setConnectListener(mConnectListener);
 ```
 ###播放状态回调
 ILelinkPlayerListener有几个接口变动
