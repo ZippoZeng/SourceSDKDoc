@@ -16,13 +16,15 @@ connect(lelinkServiceInfo);
 onPushStart(int linkType);
 ```
 变为
-```
+```java
 onStart();
 ```
 ```java
+onPushStop();
 ```
 变为
 ```java
+onStop();
 ```
 
 
