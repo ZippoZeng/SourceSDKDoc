@@ -13,7 +13,7 @@ private ILelinkMirrorListener mILelinkMirrorListener = new ILelinkMirrorListener
             if (extra == ILelinkMirrorListener.MIRROR_ERROR_UNSUPPORTED) {
                 // 不支持镜像操作
             } else if (extra == ILelinkMirrorListener.MIRROR_ERROR_REJECT_PERMISSION) {
-
+                // 拒绝了镜像权限
             }
         }
     }
