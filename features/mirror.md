@@ -2,6 +2,7 @@
 ##状态监听器
 ```java
 private ILelinkMirrorListener mILelinkMirrorListener = new ILelinkMirrorListener() {
+
     @Override
     public void onStateChange(int state) {
 
@@ -17,6 +18,7 @@ private ILelinkMirrorListener mILelinkMirrorListener = new ILelinkMirrorListener
             }
         }
     }
+    
 };
 
 ```
