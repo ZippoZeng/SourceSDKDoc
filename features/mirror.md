@@ -35,3 +35,5 @@ lelinkPlayer.stopMirror();
 ```
 ##镜像设置
 注意：镜像设置需要在startMirror之前
+- setMirrorResolutionLevel(int level)
+- setMirrorBitrateLevel(int level)
