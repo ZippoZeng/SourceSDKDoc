@@ -11,3 +11,4 @@ connect(lelinkServiceInfo,connectListener)
 ```java
 connect(lelinkServiceInfo)
 ```
+3. ILelinkPlayerListener方法变化
