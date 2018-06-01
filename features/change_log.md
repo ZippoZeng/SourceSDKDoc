@@ -5,12 +5,24 @@
 `ILelinkService.IServiceListener`变为`IConnectListener`
 2. 连接方法：
 ```java
-connect(lelinkServiceInfo,connectListener)
+connect(lelinkServiceInfo,connectListener);
 ```
 变为
 ```java
-connect(lelinkServiceInfo)
+connect(lelinkServiceInfo);
 ```
 3. ILelinkPlayerListener方法修改
 ```java
+onPushStart(int linkType);
 ```
+变为
+```
+onStart();
+```
+```java
+```
+变为
+```java
+```
+
+
