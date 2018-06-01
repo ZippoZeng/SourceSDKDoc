@@ -3,6 +3,8 @@
 ###连接接口
 ```java
 ILelinkService.IServiceListener变为IConnectListener
+其中
+
 lelinkPlayer.connect(lelinkServiceInfo,mConnectListener)变为lelinkPlayer.connect(lelinkServiceInfo)
 添加方法：
 lelinkPlayer.setConnectListener(mConnectListener);
