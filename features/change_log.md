@@ -19,6 +19,7 @@ onPushStart(int linkType);
 ```java
 onStart();
 ```
+stop方法
 ```java
 onPushStop();
 ```
