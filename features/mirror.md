@@ -41,9 +41,9 @@ lelinkPlayer.stopMirror();
 - LelinkMirrorManager.RESOLUTION_MID：低分辨率
 - LelinkMirrorManager.RESOLUTION_AUTO：根据发送端分辨率设置
 ###setBitrateLevel(int level)
-- LelinkMirrorManager.BITRATE_HIGH：高分辨率
-- LelinkMirrorManager.BITRATE_MID：高分辨率
-- LelinkMirrorManager.BITRATE_LOW：高分辨率
+- LelinkMirrorManager.BITRATE_HIGH：高比特率
+- LelinkMirrorManager.BITRATE_MID：中比特率
+- LelinkMirrorManager.BITRATE_LOW：低分辨率
 ###setAudioMirrorOnOff(boolean isOn)
-    - true：
-    - false
+- true：代表
+- false
