@@ -1,41 +1,35 @@
-# 5、镜像相关
-
-## 准备
-
+#镜像相关
+##状态监听器
 ```java
-lelinkPlayer.prepareMirror(activity, mMirrorListener);
-```
-
-注册镜像状态的监听器
-
-```java
-private ILelinkPlayer.IMirrorStateChangeListener mMirrorListener = new ILelinkPlayer.IMirrorStateChangeListener() {
+private ILelinkMirrorListener mILelinkMirrorListener = new ILelinkMirrorListener() {
 
     @Override
     public void onStateChange(int state) {
 
     }
 
-};
-```
-
-## 开始
-
-当出现权限提示框后，需点击确认，然后在Activity中的onActivityResult中配种下面选项
-
-```java
- @Override
-protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-    if (LelinkPlayer.MIRROR_PERMISSION_CODE == requestCode) {
-        mLelinkPlayer.startMirror(requestCode, resultCode, data);
-        return;
+    @Override
+    public void onError(int what, int extra) {
+        if (what == ILelinkMirrorListener.MIRROR_ERROR_INIT) {
+            if (extra == ILelinkMirrorListener.MIRROR_ERROR_UNSUPPORTED) {
+                // 不支持镜像操作：原因可能是版本小于5.0或不支持乐联协议
+            } else if (extra == ILelinkMirrorListener.MIRROR_ERROR_REJECT_PERMISSION) {
+                // 拒绝了镜像权限
+            }
+        }
     }
-}
+    
+};
+
 ```
 
-## 结束
 
+##开始
+```java
+LelinkMirrorManager lelinkMirrorManager = lelinkPlayer.getLelinkMirror();
+lelinkMirrorManager.setMirrorListener();
+```
+##结束
 ```java
 lelinkPlayer.stopMirror();
 ```
-

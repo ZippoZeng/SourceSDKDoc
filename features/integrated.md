@@ -1,9 +1,9 @@
-# 1、集成SDK
+# SDK集成
 
 ## 0、依赖
 
 请将aar到工程中的libs中，  
-![import\_aar](../.gitbook/assets/import_aar.png)  
+![import\_aar](/assets/import_aar.png)  
 然后在module的build.gradle中添加以下配置
 
 在android节点中添加以下配置
@@ -52,7 +52,7 @@ mLelinkServiceManager.browse(int browserType);
 
 * ILelinkServiceManager.TYPE\_ALL：可以搜索到乐联和DLNA协议
 * ILelinkServiceManager.TYPE\_LELINK：仅搜索乐联协议
-* ILelinkServiceManager.TYPE\_DLNA：仅搜索DLNA协议
+<!--* ILelinkServiceManager.TYPE\_DLNA：仅搜索DLNA协议-->
 
 2\) 设置搜索服务状态监听
 
@@ -77,8 +77,7 @@ private IBrowseListener BrowserListener = new IBrowseListener() {
 
 **PS：onBrowse是在子线程工作，以下接口回调，如无特殊说明，都是在子线程回调**
 
-3\) 关闭搜索
-
+3) 关闭搜索
 ```java
 mLelinkServiceManager.stopBrowse();
 ```
@@ -89,30 +88,29 @@ mLelinkServiceManager.stopBrowse();
 
 ```java
 LelinkPlayer leLinkPlayer = new LelinkPlayer(this);
-leLinkPlayer.connect(mLelinkServiceInfo, mConnectListener);
+leLinkPlayer.connect(mLelinkServiceInfo);
 ```
 
 2\) 连接服务状态监听
 
 ```java
-ILelinkService.IServiceListener connectListener = new ILelinkService.IServiceListener() {
+IConnectListener connectListener = new IConnectListener() {
 
     @Override
-    public void onConnect(LelinkServiceInfo serviceInfo) {
+    void onConnect(LelinkServiceInfo serviceInfo, int extra) {
 
     }
 
     @Override
-    public void onDisconnect(LelinkServiceInfo serviceInfo,int disConnectType) {
-
+    void onDisconnect(LelinkServiceInfo serviceInfo, int what, int extra) {
+        
     }
 };
 ```
-
-其中disConnectType的取值为：
-
-* LelinkPlayer.CODE\_DISCONNECT：断开连接成功
-* LelinkPlayer.CODE\_CONNECT\_FAILED：连接失败
+其中onDisconnect()的取值为：
+what取值
+- LelinkPlayer.CONNECT_INFO_DISCONNECT：连接断开
+- LelinkPlayer.CONNECT_ERROR_FAILED：连接失败
 
 3\) 关闭连接
 
@@ -140,22 +138,22 @@ playerListener为播控服务状态监听
 ILelinkPlayerListener playerListener = new ILelinkPlayerListener() {
 
         @Override
-        public void onPlayStart(int linkType) {
+        public void onStart(int linkType) {
 
         }
 
         @Override
-        public void onPlayPause() {
+        public void onPause() {
 
         }
 
         @Override
-        public void onPlayStop() {
+        public void onStop() {
 
         }
 
         @Override
-        public void onSeek(int pPosition) {
+        public void onSeekComplete(int pPosition) {
 
         }
 
@@ -166,17 +164,26 @@ ILelinkPlayerListener playerListener = new ILelinkPlayerListener() {
 
         @Override
         public void onError(int what, int extra) {
-
+            
         }
-
+        
+        /**
+         * 音量变化回调
+         * @param percent 当前音量
+         */
         @Override
         public void onVolumeChanged(float percent) {
 
         }
-
+        
+        /**
+         * 进度更新回调
+         * @param duration 媒体资源总长度
+         * @param position 当前进度
+         */
         @Override
         public void onPositionUpdate(long duration, long position) {
-
+            
         }
     };
 ```
@@ -197,13 +204,13 @@ if (null != mLelinkServiceManager) {
 
 * android.permission.READ\_PHONE\_STATE
 * android.permission.WRITE\_EXTERNAL\_STORAGE
-* android.permission.ACCESS\_FINE\_LOCATION
+* android.permission.ACCESS_FINE_LOCATION
 
 必须要有以上权限，否则会导致SDK功能异常
 
 以下为投屏SDK需要的权限，aar包自带有，无需再次配置
 
-```markup
+```xml
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
 <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
@@ -223,7 +230,7 @@ if (null != mLelinkServiceManager) {
 
 当需要编译打包混淆的时候，投屏SDK已混淆过，无需在对投屏SDK及其依赖的第三方jar包进行混淆，请添加以下乐播配置：
 
-```text
+```
 ###androidasync
 -keep class com.koushikdutta.async.** { *; }
 -dontwarn com.koushikdutta.async.**
@@ -247,4 +254,6 @@ if (null != mLelinkServiceManager) {
 -keep class com.hpplay.**$*{*;}
 -dontwarn com.hpplay.**
 ```
+
+
 
