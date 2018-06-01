@@ -1,20 +1,17 @@
 #镜像相关
 ##状态监听器
 ```java
-private ILelinkMirrorListener mMirrorListener = new ILelinkMirrorListener() {
+private ILelinkMirrorListener mMirrorListener= new ILelinkMirrorListener() {
+    @Override
+    public void onStateChange(int state) {
+        
+    }
 
-        @Override
-        public void onStateChange(int state) {
+    @Override
+    public void onError(int what, int extra) {
 
-        }
-
-        @Override
-        public void onError(int what, int extra) {
-                 if (what == ILelinkMirrorListener.MIRROR_ERROR_INIT) {
-                 }        
-        }
-
-    };
+    }
+};
 
 ```
 
