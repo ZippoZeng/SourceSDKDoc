@@ -36,9 +36,9 @@ lelinkPlayer.stopMirror();
 ##镜像设置
 注意：镜像设置需要在startMirror之前
 ###setResolutionLevel(int level)
-设置屏幕分辨率
+设置屏幕分辨率，默认为中等分辨率
 - LelinkMirrorManager.RESOLUTION_HIGH：高分辨率
-- LelinkMirrorManager.RESOLUTION_MID：低分辨率
+- LelinkMirrorManager.RESOLUTION_MID：中等分辨率
 - LelinkMirrorManager.RESOLUTION_AUTO：根据发送端分辨率设置
 ###setBitrateLevel(int level)
 - LelinkMirrorManager.BITRATE_HIGH：高比特率
