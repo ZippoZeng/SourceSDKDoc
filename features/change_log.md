@@ -5,4 +5,7 @@
 ```java
 ILelinkService.IServiceListener变为IConnectListener
 ```
-2. 连接方法：connect(lelinkServiceInfo,connectListener)
+2. 连接方法：
+```java
+connect(lelinkServiceInfo,connectListener)
+```
