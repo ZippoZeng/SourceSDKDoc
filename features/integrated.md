@@ -94,7 +94,7 @@ leLinkPlayer.connect(mLelinkServiceInfo, mConnectListener);
 2\) 连接服务状态监听
 
 ```java
-ILelinkService.IServiceListener connectListener = new ILelinkService.IServiceListener() {
+IConnectListener connectListener = new IConnectListener() {
 
     @Override
     public void onConnect(LelinkServiceInfo serviceInfo) {
