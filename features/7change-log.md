@@ -6,6 +6,7 @@ ILelinkService.IServiceListener变为IConnectListener
 其中
 onConnect(LelinkServiceInfo serviceInfo)变为onConnect(LelinkServiceInfo serviceInfo,int extra)
 onDisconnect(LelinkServiceInfo serviceInfo,int disConnectType)变为onDisconnect(LelinkServiceInfo serviceInfo,int what,int extra)
+关于what和extra的取值请看**集成SDK**
 
 lelinkPlayer.connect(lelinkServiceInfo,mConnectListener)变为lelinkPlayer.connect(lelinkServiceInfo)
 添加方法：
