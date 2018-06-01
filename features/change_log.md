@@ -6,6 +6,7 @@
 ILelinkService.IServiceListener变为IConnectListener
 connect(lelinkServiceInfo,connectListener)-->connect(lelinkServiceInfo)
 
+
 ```
 ###2. ILelinkPlayerListener方法修改
 ```java
