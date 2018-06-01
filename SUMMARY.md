@@ -14,6 +14,8 @@
     * [LelinkSetting](setting/LelinkSetting.md)
   * [5、镜像相关](features/mirror.md)
   * [6、Api说明](features/apishuo-ming.md)
+    * [1、LelinkServiceInfo](features/apishuo-ming/lelinkserviceinfo.md)
+    * [2、LelinkPlayerInfo](features/apishuo-ming/lelinkplayerinfo.md)
   * [7、change log](features/7change-log.md)
 * [三、增值功能](added_features.md)
   * [1、设备管理](added_features/device_manager.md)
