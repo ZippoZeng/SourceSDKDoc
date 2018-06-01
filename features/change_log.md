@@ -12,6 +12,7 @@ connect(lelinkServiceInfo,connectListener);
 connect(lelinkServiceInfo);
 ```
 3. ILelinkPlayerListener方法修改
+
 start方法
 ```java
 onPushStart(int linkType);
