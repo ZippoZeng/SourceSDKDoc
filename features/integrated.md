@@ -138,17 +138,17 @@ playerListener为播控服务状态监听
 ILelinkPlayerListener playerListener = new ILelinkPlayerListener() {
 
         @Override
-        public void onPlayStart(int linkType) {
+        public void onStart(int linkType) {
 
         }
 
         @Override
-        public void onPlayPause() {
+        public void onPause() {
 
         }
 
         @Override
-        public void onPlayStop() {
+        public void onStop() {
 
         }
 

@@ -10,8 +10,9 @@ connect(lelinkServiceInfo,connectListener)-->connect(lelinkServiceInfo)
 ###2. ILelinkPlayerListener方法修改
 ```java
 onPushStart(int linkType)--->onStart()
-onPushStop()-->onStop();
-onSeek()-->onSeekComplete();
+onPushPause()-->onPause()
+onPushStop()-->onStop()
+onSeek()-->onSeekComplete()
 ```
 
 
