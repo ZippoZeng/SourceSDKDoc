@@ -1,22 +1,22 @@
-# Summary
+# Table of contents
 
 * [概述](README.md)
-* [一、申请 APPKEY & APPSECRET](introduction/README.md)
-  * [1、申请APPKEY & APPSECRET](introduction/register.md)
-  * [2、SDK & demo 下载](introduction/download.md)
+* [一、申请 APPKEY & APPSECRET](yi-shen-qing-appkey-appsecret/README.md)
+  * [1、申请APPKEY & APPSECRET](yi-shen-qing-appkey-appsecret/1-shen-qing-appkey-appsecret.md)
+  * [2、SDK & demo 下载](yi-shen-qing-appkey-appsecret/2sdk-demo-xia-zai.md)
 * [二、SDK集成](features/README.md)
   * [1、集成SDK](features/integrated.md)
-  * [2、连接服务](features/connect.md)
-    * [1\) 先连接，后推送](features/connect/first_connect_after_push.md)
-    * [2\) 直接推送](features/connect/direct_push.md)
-  * [3、播放控制](features/play_control.md)
-  * [4、其他设置选项](setting/README.md)
-    * [LelinkSetting](setting/LelinkSetting.md)
-  * [5、镜像相关](features/mirror.md)
-  * [6、Api说明](features/apishuo-ming.md)
-    * [1、LelinkServiceInfo](features/apishuo-ming/lelinkserviceinfo.md)
-    * [2、LelinkPlayerInfo](features/apishuo-ming/lelinkplayerinfo.md)
-  * [7、change log](features/7change-log.md)
-* [三、增值功能](added_features.md)
-  * [1、设备管理](added_features/device_manager.md)
+  * 2、连接服务
+    * [1\) 先连接，后推送](features/2-lian-jie-fu-wu/1-xian-lian-jie-hou-tui-song.md)
+    * [2\) 直接推送](features/2-lian-jie-fu-wu/2-zhi-jie-tui-song.md)
+  * [3、播放控制](features/3-bo-fang-kong-zhi.md)
+  * 4、其他设置选项
+    * LelinkSetting
+  * [5、镜像相关](features/5-jing-xiang-xiang-guan.md)
+  * [6、Api说明](features/6api-shuo-ming/README.md)
+    * [1、LelinkServiceInfo](features/6api-shuo-ming/1-lelinkserviceinfo.md)
+    * [2、LelinkPlayerInfo](features/6api-shuo-ming/2-lelinkplayerinfo.md)
+  * [7、change log](features/changelog.md)
+* 三、增值功能
+  * [1、设备管理](san-zeng-zhi-gong-neng/1-she-bei-guan-li.md)
 
