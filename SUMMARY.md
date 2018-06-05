@@ -7,8 +7,8 @@
 * [二、SDK集成](features/README.md)
   * [1、集成SDK](features/integrated.md)
   * 2、连接服务
-    * [1\) 先连接，后推送](features/2-lian-jie-fu-wu/1-xian-lian-jie-hou-tui-song.md)
-    * [2\) 直接推送](features/2-lian-jie-fu-wu/2-zhi-jie-tui-song.md)
+    * [1\) 先连接，后推送](features/connect/1-xian-lian-jie-hou-tui-song.md)
+    * [2\) 直接推送](features/connect/2-zhi-jie-tui-song.md)
   * [3、播放控制](features/3-bo-fang-kong-zhi.md)
   * 4、其他设置选项
     * LelinkSetting
