@@ -17,7 +17,7 @@ mLelinkPlayer.start();
     - ILelinkMirrorManager.RESOLUTION_HIGH：
     - ILelinkMirrorManager.RESOLUTION_MID：
     - ILelinkMirrorManager.RESOLUTION_AUTO：
-- MirrorBitrateLevel
+- MirrorBitrateLevel的取值
 
 
 ##结束
