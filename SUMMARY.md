@@ -3,7 +3,7 @@
 * [概述](README.md)
 * [一、申请 APPKEY & APPSECRET](introduction/README.md)
   * [1、申请APPKEY & APPSECRET](introduction/register.md)
-  * [2、SDK & demo 下载](introduction/download.md)
+<!--  * [2、SDK & demo 下载](introduction/download.md) -->
 * [二、SDK集成](features/README.md)
   * [1、集成SDK](features/integrated.md)
   * [2、连接服务](features/connect.md)
