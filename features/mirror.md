@@ -17,6 +17,8 @@ mLelinkPlayer.start();
     - ILelinkMirrorManager.RESOLUTION_HIGH：
     - ILelinkMirrorManager.RESOLUTION_MID：
     - ILelinkMirrorManager.RESOLUTION_AUTO：
+- 
+
 
 ##结束
 ```java
