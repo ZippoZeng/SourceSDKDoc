@@ -1,19 +1,23 @@
 #ChangeLog
-
 ##3.0.6
-###1. 连接
+###连接接口
 ```java
 ILelinkService.IServiceListener变为IConnectListener
-connect(lelinkServiceInfo,connectListener)-->connect(lelinkServiceInfo)
+其中
+onConnect(LelinkServiceInfo serviceInfo)变为onConnect(LelinkServiceInfo serviceInfo,int extra)
+onDisconnect(LelinkServiceInfo serviceInfo,int disConnectType)变为onDisconnect(LelinkServiceInfo serviceInfo,int what,int extra)
+关于what和extra的取值请看**集成SDK**
 
-
+lelinkPlayer.connect(lelinkServiceInfo,mConnectListener)变为lelinkPlayer.connect(lelinkServiceInfo)
+添加方法：
+lelinkPlayer.setConnectListener(mConnectListener);
 ```
-###2. ILelinkPlayerListener方法修改
+###播放状态回调
+ILelinkPlayerListener有几个接口变动
 ```java
-onPushStart(int linkType)--->onStart()
-onPushPause()-->onPause()
-onPushStop()-->onStop()
-onSeek()-->onSeekComplete()
+onPlayStart(int linkType)变为onStart()
+onPlayPause()变为onPause()
+onPlayStop()变为onStop()
+onSeek(int position)变为onSeekComplete(int position)
+
 ```
-
-
