@@ -31,8 +31,8 @@ private IConnectListener mConnectListener = new IConnectListener() {
 ```
 ###onDisconnect的what取值
 ###onDisconnect的extra取值
-- IConnectListener.CONNECT_ERROR_IM_WAITTING
-- IConnectListener.CONNECT_ERROR_IM_REJECT
-- IConnectListener.CONNECT_ERROR_IM_TIMEOUT
-- IConnectListener.CONNECT_ERROR_IM_BLACKLIST
+- IConnectListener.CONNECT_ERROR_IM_WAITTING：IM等待确认
+- IConnectListener.CONNECT_ERROR_IM_REJECT：IM拒绝
+- IConnectListener.CONNECT_ERROR_IM_TIMEOUT：IM连接超时
+- IConnectListener.CONNECT_ERROR_IM_BLACKLIST：IM黑名单
 ##播控错误码
