@@ -147,7 +147,7 @@ ILelinkPlayerListener playerListener = new ILelinkPlayerListener() {
         }
         
         @Override
-        public void onPause() {
+        public void onCompletion() {
 
         }
         
