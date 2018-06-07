@@ -75,22 +75,22 @@ leLinkPlayer.release();
 ILelinkPlayerListener playerListener = new ILelinkPlayerListener() {
 
         @Override
-        public void onPlayStart(int linkType) {
+        public void onStart() {
 
         }
 
         @Override
-        public void onPlayPause() {
+        public void onPause() {
 
         }
 
         @Override
-        public void onPlayStop() {
+        public void onStop() {
 
         }
 
         @Override
-        public void onSeek(int pPosition) {
+        public void onSeekComplete(int pPosition) {
 
         }
 
