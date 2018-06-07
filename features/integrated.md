@@ -19,7 +19,6 @@ repositories {
 在dependencies中添加以下配置
 
 ```groovy
-compile 'com.android.support:appcompat-v7:24.2.0'
 compile(name: 'source-sdk', ext: 'aar')
 ```
 
