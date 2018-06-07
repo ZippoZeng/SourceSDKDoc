@@ -16,7 +16,7 @@
 
 ![](http://cdn.hpplay.com.cn/test/don/_book/assets/import_03.png)
 
-如果登陆后无法操作，表示还未通过审核，请耐心等待。
+如果登录后无法操作，表示还未通过审核，请耐心等待。
 
 2\) 已有应用秘钥更新
 
