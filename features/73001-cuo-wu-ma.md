@@ -31,7 +31,5 @@ private IConnectListener mConnectListener = new IConnectListener() {
 ```
 ###onDisconnect的what取值
 ###onDisconnect的extra取值
-onDisconnect中
-
 
 ##播控错误码
