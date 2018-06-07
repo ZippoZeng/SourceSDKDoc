@@ -4,7 +4,7 @@
 
 首次接入乐播SDK需在[http://cloud.hpplay.cn/](http://cloud.hpplay.cn/) 进行注册，注册成功后需等待后台审核， 我们会在24小时内处理。
 
-![](http://cdn.hpplay.com.cn/test/don/_book/assets/import_01.png)
+![register](http://cdn.hpplay.com.cn/test/don/_book/assets/import_01.png)
 
 2、应用管理
 
