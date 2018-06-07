@@ -1,33 +1,16 @@
 #镜像相关
-##状态监听器
-```java
-private ILelinkMirrorListener mILelinkMirrorListener = new ILelinkMirrorListener() {
-
-    @Override
-    public void onStateChange(int state) {
-
-    }
-
-    @Override
-    public void onError(int what, int extra) {
-        if (what == ILelinkMirrorListener.MIRROR_ERROR_INIT) {
-            if (extra == ILelinkMirrorListener.MIRROR_ERROR_UNSUPPORTED) {
-                // 不支持镜像操作：原因可能是版本小于5.0或不支持乐联协议
-            } else if (extra == ILelinkMirrorListener.MIRROR_ERROR_REJECT_PERMISSION) {
-                // 拒绝了镜像权限
-            }
-        }
-    }
-    
-};
-
-```
-
 
 ##开始
 ```java
-LelinkMirrorManager lelinkMirrorManager = lelinkPlayer.getLelinkMirror();
-lelinkMirrorManager.setMirrorListener();
+LelinkPlayerInfo lelinkPlayerInfo = new LelinkPlayerInfo();
+lelinkPlayerInfo.setType(LelinkPlayerInfo.TYPE_MIRROR);
+lelinkPlayerInfo.setActivity(pActivity);
+lelinkPlayerInfo.setLelinkServiceInfo(lelinkServiceInfo);
+lelinkPlayerInfo.setMirrorAudioEnable(true);
+lelinkPlayerInfo.setResolutionLevel(mResolutionLevel);
+lelinkPlayerInfo.setBitRateLevel(mBitrateLevel);
+mLelinkPlayer.setDataSource(lelinkPlayerInfo);
+mLelinkPlayer.start();
 ```
 ##结束
 ```java
