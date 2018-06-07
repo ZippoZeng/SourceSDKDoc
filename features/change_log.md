@@ -19,5 +19,5 @@ onPlayStart(int linkType)变为onStart()
 onPlayPause()变为onPause()
 onPlayStop()变为onStop()
 onSeek(int position)变为onSeekComplete(int position)
-
+增加onCompletion()
 ```
