@@ -26,19 +26,3 @@ mLelinkPlayer.start();
 ```java
 mLelinkPlayer.stop();
 ```
-##镜像设置
-注意：镜像设置需要在startMirror之前
-###setResolutionLevel(int level)
-设置屏幕分辨率，默认为中等分辨率
-- LelinkMirrorManager.RESOLUTION_HIGH：高分辨率
-- LelinkMirrorManager.RESOLUTION_MID：中等分辨率
-- LelinkMirrorManager.RESOLUTION_AUTO：根据发送端分辨率设置
-###setBitrateLevel(int level)
-设置比特率，默认为中比特率
-- LelinkMirrorManager.BITRATE_HIGH：高比特率
-- LelinkMirrorManager.BITRATE_MID：中比特率
-- LelinkMirrorManager.BITRATE_LOW：低分辨率
-###setAudioOpen(boolean isOn)
-是否在镜像的时候录制声音，默认为false
-- true：录制声音
-- false：不设置声音
