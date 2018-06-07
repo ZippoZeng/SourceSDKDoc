@@ -6,13 +6,16 @@ LelinkPlayerInfo lelinkPlayerInfo = new LelinkPlayerInfo();
 lelinkPlayerInfo.setType(LelinkPlayerInfo.TYPE_MIRROR);
 lelinkPlayerInfo.setActivity(activity);
 lelinkPlayerInfo.setLelinkServiceInfo(lelinkServiceInfo);
-//是否开启录制声音
+// 是否开启录制声音
 lelinkPlayerInfo.setMirrorAudioEnable(true);
 lelinkPlayerInfo.setResolutionLevel(mResolutionLevel);
 lelinkPlayerInfo.setBitRateLevel(mBitrateLevel);
 mLelinkPlayer.setDataSource(lelinkPlayerInfo);
 mLelinkPlayer.start();
 ```
+- ResolutionLevel的取值
+
+
 ##结束
 ```java
 lelinkPlayer.stopMirror();
