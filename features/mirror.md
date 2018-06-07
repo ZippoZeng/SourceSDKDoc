@@ -24,7 +24,7 @@ mLelinkPlayer.start();
 
 ##结束
 ```java
-lelinkPlayer.stopMirror();
+mLelinkPlayer.stop();
 ```
 ##镜像设置
 注意：镜像设置需要在startMirror之前
