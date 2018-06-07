@@ -254,6 +254,3 @@ if (null != mLelinkServiceManager) {
 -keep class com.hpplay.**$*{*;}
 -dontwarn com.hpplay.**
 ```
-
-
-
