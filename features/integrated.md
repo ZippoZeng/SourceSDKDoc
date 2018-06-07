@@ -137,7 +137,7 @@ playerListener为播控服务状态监听
 ILelinkPlayerListener playerListener = new ILelinkPlayerListener() {
 
         @Override
-        public void onStart(int linkType) {
+        public void onStart() {
 
         }
 
