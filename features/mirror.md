@@ -4,7 +4,7 @@
 ```java
 LelinkPlayerInfo lelinkPlayerInfo = new LelinkPlayerInfo();
 lelinkPlayerInfo.setType(LelinkPlayerInfo.TYPE_MIRROR);
-lelinkPlayerInfo.setActivity(pActivity);
+lelinkPlayerInfo.setActivity(activity);
 lelinkPlayerInfo.setLelinkServiceInfo(lelinkServiceInfo);
 lelinkPlayerInfo.setMirrorAudioEnable(true);
 lelinkPlayerInfo.setResolutionLevel(mResolutionLevel);
