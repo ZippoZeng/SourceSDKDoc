@@ -12,6 +12,7 @@ private IConnectListener mConnectListener = new IConnectListener() {
         if (what == IConnectListener.CONNECT_INFO_DISCONNECT) {
         // 断开连接
         } else if (what == IConnectListener.CONNECT_ERROR_FAILED) {
+            // 连接错误
             String text = null;
             if (extra == IConnectListener.CONNECT_ERROR_IO) {
                 text = serviceInfo.getName() + "连接失败";
