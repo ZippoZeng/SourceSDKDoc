@@ -14,9 +14,9 @@ mLelinkPlayer.setDataSource(lelinkPlayerInfo);
 mLelinkPlayer.start();
 ```
 - ResolutionLevel的取值
-    - ILelinkMirrorManager.RESOLUTION_HIGH：
-    - ILelinkMirrorManager.RESOLUTION_MID：
-    - ILelinkMirrorManager.RESOLUTION_AUTO：
+    - ILelinkMirrorManager.RESOLUTION_HIGH：1080p分辨率
+    - ILelinkMirrorManager.RESOLUTION_MID：720p分辨率
+    - ILelinkMirrorManager.RESOLUTION_AUTO：屏幕分辨率
 - MirrorBitrateLevel的取值
     - ILelinkMirrorManager.BITRATE_HIGH：高比特率
     - ILelinkMirrorManager.BITRATE_MID：中比特率
