@@ -235,7 +235,6 @@ if (null != mLelinkServiceManager) {
 当需要编译打包混淆的时候，投屏SDK已混淆过，无需在对投屏SDK及其依赖的第三方jar包进行混淆，请添加以下乐播配置：
 
 ```
-
 ###jmdns
 -keep class javax.jmdns.** { *; }
 -dontwarn javax.jmdns.**
