@@ -14,7 +14,9 @@ mLelinkPlayer.setDataSource(lelinkPlayerInfo);
 mLelinkPlayer.start();
 ```
 - ResolutionLevel的取值
-
+    - 
+    - 
+    - 
 
 ##结束
 ```java
