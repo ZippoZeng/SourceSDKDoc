@@ -16,7 +16,7 @@
   * [6、Api说明](features/apishuo-ming.md)
     * [1、LelinkServiceInfo](features/apishuo-ming/lelinkserviceinfo.md)
     * [2、LelinkPlayerInfo](features/apishuo-ming/lelinkplayerinfo.md)
-  * [7、错误码](features/73001-cuo-wu-ma.md)
+  * [7、错误码](features/error_code.md)
   * [8、change log](features/change_log.md)
 * [三、增值功能](added_features.md)
   * [1、设备管理](added_features/device_manager.md)
