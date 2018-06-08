@@ -19,5 +19,5 @@
   * [7、错误码](features/error_code.md)
   * [8、change log](features/change_log.md)
 * [三、增值功能](added_features.md)
-  * [1、设备管理](added_features/device_manager.md)
+ <!-- * [1、设备管理](added_features/device_manager.md)-->
 
