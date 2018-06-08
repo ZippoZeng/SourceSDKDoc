@@ -1,4 +1,4 @@
-#直接推送
+# 2\) 直接推送
 ```java
 LelinkPlayerInfo lelinkPlayerInfo = new LelinkPlayerInfo();
 lelinkPlayerInfo.setLelinkServiceInfo(mLelinkServiceInfo);
