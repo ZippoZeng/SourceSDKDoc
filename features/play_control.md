@@ -83,7 +83,12 @@ ILelinkPlayerListener playerListener = new ILelinkPlayerListener() {
         public void onPause() {
 
         }
+        
+        @Override
+        public void onCompletion() {
 
+        }
+        
         @Override
         public void onStop() {
 
@@ -113,19 +118,9 @@ ILelinkPlayerListener playerListener = new ILelinkPlayerListener() {
         public void onPositionUpdate(long duration, long position) {
 
         }
+        
     };
 ```
-###onError(int what, int extra)
-####what取值
-- LelinkPlayer.TYPE_PLAYER = 1
-
-####extra取值
-- LelinkPlayer.CODE_TV_OFFLINE = -100,公网推送检测到接收端不在线
-- LelinkPlayer.CODE_FILE_NOT_EXISTET = -200,推送本地文件不存在
-- LelinkPlayer.CODE_IM_NONSUPPORT = -500,公网推送不支持该推送类型
-- LelinkPlayer.CODE_IMAGE_SEND_FAILED = -600,图片推送失败
-- LelinkPlayer.CODE_NOT_CONNECTED_DEVICES = -700,没有设备
-
 
 
 
