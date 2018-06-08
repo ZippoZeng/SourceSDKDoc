@@ -86,7 +86,7 @@ ILelinkPlayerListener mLelinkPlayerListener = new ILelinkPlayerListener() {
          */
         @Override
         public void onVolumeChanged(float percent) {
-            Logger.d(TAG, "onVolumeChanged percent:" + percent);
+
         }
 
         /**
@@ -103,6 +103,8 @@ ILelinkPlayerListener mLelinkPlayerListener = new ILelinkPlayerListener() {
     };
 ```
 ##onError的what取值
+- PUSH_ERROR_INIT：推送初始化错误
+
 ##onError的extra取值
 
 int PUSH_ERROR_INIT = 800;
