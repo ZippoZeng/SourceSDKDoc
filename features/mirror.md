@@ -4,6 +4,7 @@
 ```java
 // 先连接
 
+
 LelinkPlayerInfo lelinkPlayerInfo = new LelinkPlayerInfo();
 lelinkPlayerInfo.setType(LelinkPlayerInfo.TYPE_MIRROR);
 lelinkPlayerInfo.setActivity(activity);
