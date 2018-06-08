@@ -120,6 +120,8 @@ ILelinkPlayerListener mLelinkPlayerListener = new ILelinkPlayerListener() {
 
     };
 ```
+##onError的what取值
+##onError的extra取值
 
 int PUSH_ERROR_INIT = 800;
 int PUSH_ERRROR_FILE_NOT_EXISTED = 801;
