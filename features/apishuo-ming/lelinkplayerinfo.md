@@ -7,7 +7,7 @@
 - LelinkPlayerInfo.TYPE_AUDIO：音频文件
 - LelinkPlayerInfo.TYPE_VIDEO：视频文件
 - LelinkPlayerInfo.TYPE_IMAGE：图像文件
-- LelinkPlayerInfo.TYPE_MIRROR：镜像
+- LelinkPlayerInfo.TYPE_MIRROR：镜像文件
 
 ##localPath
 代表要推送的本地文件地址
