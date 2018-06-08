@@ -1,66 +1,34 @@
-# 5、镜像相关
+#镜像相关
 
-## 状态监听器
-
+##开始
 ```java
-private ILelinkMirrorListener mILelinkMirrorListener = new ILelinkMirrorListener() {
+// 先连接
+mLelinkPlayer.connect(lelinkServiceInfo);
 
-    @Override
-    public void onStateChange(int state) {
-
-    }
-
-    @Override
-    public void onError(int what, int extra) {
-        if (what == ILelinkMirrorListener.MIRROR_ERROR_INIT) {
-            if (extra == ILelinkMirrorListener.MIRROR_ERROR_UNSUPPORTED) {
-                // 不支持镜像操作：原因可能是版本小于5.0或不支持乐联协议
-            } else if (extra == ILelinkMirrorListener.MIRROR_ERROR_REJECT_PERMISSION) {
-                // 拒绝了镜像权限
-            }
-        }
-    }
-
-};
+LelinkPlayerInfo lelinkPlayerInfo = new LelinkPlayerInfo();
+lelinkPlayerInfo.setType(LelinkPlayerInfo.TYPE_MIRROR);
+lelinkPlayerInfo.setActivity(activity);
+lelinkPlayerInfo.setLelinkServiceInfo(lelinkServiceInfo);
+// 是否开启录制声音
+lelinkPlayerInfo.setMirrorAudioEnable(true);
+lelinkPlayerInfo.setResolutionLevel(mResolutionLevel);
+lelinkPlayerInfo.setBitRateLevel(mBitrateLevel);
+mLelinkPlayer.setDataSource(lelinkPlayerInfo);
+mLelinkPlayer.start();
 ```
+- ResolutionLevel的取值
+    - ILelinkMirrorManager.RESOLUTION_HIGH：1080p分辨率
+    - ILelinkMirrorManager.RESOLUTION_MID：720p分辨率
+    - ILelinkMirrorManager.RESOLUTION_AUTO：屏幕分辨率
+- MirrorBitrateLevel的取值
+    - ILelinkMirrorManager.BITRATE_HIGH：高比特率
+    - ILelinkMirrorManager.BITRATE_MID：中比特率
+    - ILelinkMirrorManager.BITRATE_LOW：低比特率
 
-## 开始
+// setLelinkServiceInfo中的lelinkServiceInfo中的
 
+
+##结束
 ```java
-LelinkMirrorManager lelinkMirrorManager = lelinkPlayer.getLelinkMirror();
-lelinkMirrorManager.setMirrorListener();
+mLelinkPlayer.stop();
 ```
-
-## 结束
-
-```java
-lelinkPlayer.stopMirror();
-```
-
-## 镜像设置
-
-注意：镜像设置需要在startMirror之前
-
-### setResolutionLevel\(int level\)
-
-设置屏幕分辨率，默认为中等分辨率
-
-* LelinkMirrorManager.RESOLUTION\_HIGH：高分辨率
-* LelinkMirrorManager.RESOLUTION\_MID：中等分辨率
-* LelinkMirrorManager.RESOLUTION\_AUTO：根据发送端分辨率设置
-
-###setBitrateLevel(int level)
-
-设置比特率，默认为中比特率
-
-* LelinkMirrorManager.BITRATE\_HIGH：高比特率
-* LelinkMirrorManager.BITRATE\_MID：中比特率
-* LelinkMirrorManager.BITRATE\_LOW：低分辨率
-
-**setAudioOpen\(boolean isOn\)**
-
-是否在镜像的时候录制声音，默认为false
-
-* true：录制声音
-* false：不设置声音
-
