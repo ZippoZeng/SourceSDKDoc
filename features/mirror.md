@@ -2,8 +2,7 @@
 
 ##开始
 ```java
-
-// 
+// 先连接
 
 LelinkPlayerInfo lelinkPlayerInfo = new LelinkPlayerInfo();
 lelinkPlayerInfo.setType(LelinkPlayerInfo.TYPE_MIRROR);
