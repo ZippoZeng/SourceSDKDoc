@@ -76,25 +76,7 @@ ILelinkPlayerListener mLelinkPlayerListener = new ILelinkPlayerListener() {
 
         @Override
         public void onError(int what, int extra) {
-            if (what == ILelinkPlayerListener.PUSH_ERROR_INIT) {
-                if (extra == ILelinkPlayerListener.PUSH_ERRROR_FILE_NOT_EXISTED) {
-                    // 文件不存在
-                } else if (extra == ILelinkPlayerListener.PUSH_ERROR_IM_OFFLINE) {
-                    // IM TV不在线
-                } else if (extra == ILelinkPlayerListener.PUSH_ERROR_IMAGE) {
-                    // 推送图片失败
-                } else if (extra == ILelinkPlayerListener.PUSH_ERROR_IM_UNSUPPORTED_MIMETYPE) {
-                   // 公网推送不支持此媒体类型
-                } else {
-                  // 未知
-                }
-            } else if (what == ILelinkPlayerListener.MIRROR_ERROR_INIT) {
-                if (extra == ILelinkPlayerListener.MIRROR_ERROR_UNSUPPORTED) {
-                    // 不支持镜像
-                } else if (extra == ILelinkPlayerListener.MIRROR_ERROR_REJECT_PERMISSION) {
-                    // 镜像权限拒绝
-                }
-            }
+            
         }
 
         /**
