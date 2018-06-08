@@ -8,20 +8,19 @@
 
 2. 连接成功后推送
 
-   ```java
-   LelinkPlayerInfo lelinkPlayerInfo = new LelinkPlayerInfo();
-   lelinkPlayerInfo.setType(LelinkPlayerInfo.TYPE_VIDEO);
-   //lelinkPlayerInfo.setLocalPath(url);
-   lelinkPlayerInfo.setUrl(url);
-   leLinkPlayer.setDataSource(lelinkPlayerInfo);
-   leLinkPlayer.start();
+```java
+LelinkPlayerInfo lelinkPlayerInfo = new LelinkPlayerInfo();
+lelinkPlayerInfo.setType(LelinkPlayerInfo.TYPE_VIDEO);
+//lelinkPlayerInfo.setLocalPath(url);
+lelinkPlayerInfo.setUrl(url);
+leLinkPlayer.setDataSource(lelinkPlayerInfo);
+leLinkPlayer.start();
    ```
 
-   3、断开连接
-
-   ```java
-   leLinkPlayer.disConnect(mLelinkServiceInfo);
-   ```
+3. 断开连接
+```java
+leLinkPlayer.disConnect(mLelinkServiceInfo);
+```
 
 ## 二维码连接
 
