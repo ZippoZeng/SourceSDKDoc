@@ -109,9 +109,9 @@ ILelinkPlayerListener mLelinkPlayerListener = new ILelinkPlayerListener() {
 - MIRROR_ERROR_CODEC：镜像编码错误
 ##onError的extra取值
 
-int PUSH_ERROR_INIT = 800;
-int PUSH_ERRROR_FILE_NOT_EXISTED = 801;
-int PUSH_ERROR_IMAGE = 802;// 图片推送失败
-int PUSH_ERROR_IM_UNSUPPORTED_MIMETYPE = 803;// 公网推送不支持该推送类型
-int PUSH_ERROR_IM_OFFLINE = 804;
-int PUSH_ERROR_IO = 830;
+- PUSH_ERROR_INIT:
+- PUSH_ERRROR_FILE_NOT_EXISTED = 801;
+- PUSH_ERROR_IMAGE = 802;// 图片推送失败
+- PUSH_ERROR_IM_UNSUPPORTED_MIMETYPE = 803;// 公网推送不支持该推送类型
+- PUSH_ERROR_IM_OFFLINE = 804;
+- PUSH_ERROR_IO = 830;
