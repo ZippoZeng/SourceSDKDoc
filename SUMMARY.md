@@ -17,7 +17,7 @@
     * [1、LelinkServiceInfo](features/api/lelinkserviceinfo.md)
     * [2、LelinkPlayerInfo](features/api/lelinkplayerinfo.md)
   * [7、错误码](features/error_code.md)
-  * [8、change log](features/change_log.md)
+  * [8、change log](features/changelog.md)
 * [三、增值功能](added_features.md)
  <!-- * [1、设备管理](added_features/device_manager.md)-->
 

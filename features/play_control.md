@@ -83,12 +83,12 @@ ILelinkPlayerListener playerListener = new ILelinkPlayerListener() {
         public void onPause() {
 
         }
-        
+
         @Override
         public void onCompletion() {
 
         }
-        
+
         @Override
         public void onStop() {
 
@@ -106,7 +106,7 @@ ILelinkPlayerListener playerListener = new ILelinkPlayerListener() {
 
         @Override
         public void onError(int what, int extra) {
-            
+
         }
 
         @Override
@@ -118,7 +118,7 @@ ILelinkPlayerListener playerListener = new ILelinkPlayerListener() {
         public void onPositionUpdate(long duration, long position) {
 
         }
-        
+
     };
 ```
 

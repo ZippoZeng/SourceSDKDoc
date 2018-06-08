@@ -2,8 +2,8 @@
 
 ## 0、依赖
 
-请将aar到工程中的libs中，  
-![import\_aar](/assets/import_aar.png)  
+请将aar到工程中的libs中，
+![import\_aar](/assets/import_aar.png)
 然后在module的build.gradle中添加以下配置
 
 在android节点中添加以下配置
@@ -32,9 +32,9 @@ ILelinkServiceManager mLelinkServiceManager = LelinkServiceManager.getInstance(c
 mLelinkServiceManager.setLelinkSetting(lelinkSetting);
 ```
 
-SDK初始化需要传入三个参数：  
-第一个参数为应用程序的context；  
-第二个参数是在开发者中心申请的APPKEY；  
+SDK初始化需要传入三个参数：
+第一个参数为应用程序的context；
+第二个参数是在开发者中心申请的APPKEY；
 第三个参数是在开发者中心申请的APPSECRET
 
 关于APPKEY & APPSECRET 的获取，[1、申请APPKEY & APPSECRET](http://cdn.hpplay.com.cn/test/don/_book/jie-shou-duan-sdk-kai-fa-zhe-wen-dang/shen.html)
@@ -102,7 +102,7 @@ IConnectListener connectListener = new IConnectListener() {
 
     @Override
     void onDisconnect(LelinkServiceInfo serviceInfo, int what, int extra) {
-        
+
     }
 };
 ```
@@ -145,12 +145,12 @@ ILelinkPlayerListener playerListener = new ILelinkPlayerListener() {
         public void onPause() {
 
         }
-        
+
         @Override
         public void onCompletion() {
             // 播放完成
         }
-        
+
         @Override
         public void onStop() {
 
@@ -168,9 +168,9 @@ ILelinkPlayerListener playerListener = new ILelinkPlayerListener() {
 
         @Override
         public void onError(int what, int extra) {
-            
+
         }
-        
+
         /**
          * 音量变化回调
          * @param percent 当前音量
@@ -179,7 +179,7 @@ ILelinkPlayerListener playerListener = new ILelinkPlayerListener() {
         public void onVolumeChanged(float percent) {
 
         }
-        
+
         /**
          * 进度更新回调
          * @param duration 媒体资源总长度
@@ -187,8 +187,9 @@ ILelinkPlayerListener playerListener = new ILelinkPlayerListener() {
          */
         @Override
         public void onPositionUpdate(long duration, long position) {
-            
+
         }
+
     };
 ```
 

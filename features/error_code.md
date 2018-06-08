@@ -4,7 +4,7 @@
 private IConnectListener mConnectListener = new IConnectListener() {
 
     @Override
-    public void onConnect(LelinkServiceInfo serviceInfo, 
+    public void onConnect(LelinkServiceInfo serviceInfo, int what) {
     }
 
     @Override
@@ -51,7 +51,7 @@ ILelinkPlayerListener mLelinkPlayerListener = new ILelinkPlayerListener() {
 
         @Override
         public void onPause() {
-   
+
         }
 
         @Override
@@ -76,7 +76,7 @@ ILelinkPlayerListener mLelinkPlayerListener = new ILelinkPlayerListener() {
 
         @Override
         public void onError(int what, int extra) {
-            
+
         }
 
         /**
@@ -97,7 +97,7 @@ ILelinkPlayerListener mLelinkPlayerListener = new ILelinkPlayerListener() {
          */
         @Override
         public void onPositionUpdate(long duration, long position) {
-        
+
         }
 
     };
