@@ -90,11 +90,7 @@ ILelinkPlayerListener mLelinkPlayerListener = new ILelinkPlayerListener() {
                 }
             } else if (what == ILelinkPlayerListener.MIRROR_ERROR_INIT) {
                 if (extra == ILelinkPlayerListener.MIRROR_ERROR_UNSUPPORTED) {
-                    if (null != mUIHandler) {
-                        text = "不支持镜像";
-                        mUIHandler.sendMessage(buildTextMessage(text));
-                        mUIHandler.sendMessage(buildStateMessage(IUIUpdateListener.STATE_STOP_MIRROR, text));
-                    }
+                    // 不支持镜像
                 } else if (extra == ILelinkPlayerListener.MIRROR_ERROR_REJECT_PERMISSION) {
                     // 镜像权限拒绝
                 }
