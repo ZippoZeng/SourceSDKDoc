@@ -86,7 +86,7 @@ ILelinkPlayerListener mLelinkPlayerListener = new ILelinkPlayerListener() {
                 } else if (extra == ILelinkPlayerListener.PUSH_ERROR_IM_UNSUPPORTED_MIMETYPE) {
                    // 公网推送不支持此媒体类型
                 } else {
-                  // text = "未知";
+                  // 未知
                 }
             } else if (what == ILelinkPlayerListener.MIRROR_ERROR_INIT) {
                 if (extra == ILelinkPlayerListener.MIRROR_ERROR_UNSUPPORTED) {
