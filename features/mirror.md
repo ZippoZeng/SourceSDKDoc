@@ -22,6 +22,9 @@ mLelinkPlayer.start();
     - ILelinkMirrorManager.BITRATE_MID：中比特率
     - ILelinkMirrorManager.BITRATE_LOW：低比特率
 
+// setLelinkServiceInfo中的lelinkServiceInfo中的
+
+
 ##结束
 ```java
 mLelinkPlayer.stop();
