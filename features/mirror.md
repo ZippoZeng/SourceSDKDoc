@@ -2,6 +2,9 @@
 
 ##开始
 ```java
+
+// 
+
 LelinkPlayerInfo lelinkPlayerInfo = new LelinkPlayerInfo();
 lelinkPlayerInfo.setType(LelinkPlayerInfo.TYPE_MIRROR);
 lelinkPlayerInfo.setActivity(activity);
