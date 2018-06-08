@@ -95,8 +95,6 @@ ILelinkPlayerListener mLelinkPlayerListener = new ILelinkPlayerListener() {
                     // 镜像权限拒绝
                 }
             }
-            mUIHandler.sendMessage(buildTextMessage(text));
-            mUIHandler.sendMessage(buildStateMessage(IUIUpdateListener.STATE_PLAY_ERROR, text));
         }
 
         /**
@@ -117,11 +115,7 @@ ILelinkPlayerListener mLelinkPlayerListener = new ILelinkPlayerListener() {
          */
         @Override
         public void onPositionUpdate(long duration, long position) {
-            Logger.d(TAG, "onPositionUpdate duration:" + duration + " position:" + position);
-            long[] arr = new long[] { duration, position };
-            if (null != mUIHandler) {
-                mUIHandler.sendMessage(buildStateMessage(IUIUpdateListener.STATE_POSITION_UPDATE, arr));
-            }
+        
         }
 
     };
