@@ -108,8 +108,8 @@ IConnectListener connectListener = new IConnectListener() {
 ```
 其中onDisconnect()的取值为：
 what取值
-- LelinkPlayer.CONNECT_INFO_DISCONNECT：连接断开
-- LelinkPlayer.CONNECT_ERROR_FAILED：连接失败
+- IConnectListener.CONNECT_INFO_DISCONNECT：连接断开
+- IConnectListener.CONNECT_ERROR_FAILED：连接失败
 
 3\) 关闭连接
 
