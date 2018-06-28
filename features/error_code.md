@@ -103,7 +103,7 @@ ILelinkPlayerListener mLelinkPlayerListener = new ILelinkPlayerListener() {
     };
 ```
 ##onError的what取值
-- PUSH_ERROR_INIT：推送初始化错误
+- ILelinkPlayerListener.PUSH_ERROR_INIT：推送初始化错误
 - MIRROR_ERROR_INIT：镜像初始化错误
 - MIRROR_ERROR_PREPARE：镜像准备错误
 - MIRROR_ERROR_CODEC：镜像编码错误
