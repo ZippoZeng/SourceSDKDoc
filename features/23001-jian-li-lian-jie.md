@@ -8,14 +8,14 @@ LelinkPlayer leLinkPlayer = new LelinkPlayer(context);
 ```java
 IConnectListener connectListener = new IConnectListener() {
 
-@Override
-void onConnect(LelinkServiceInfo serviceInfo, int extra) {
-
-}
-
-@Override
-void onDisconnect(LelinkServiceInfo serviceInfo, int what, int extra) {
-
-}
+    @Override
+    void onConnect(LelinkServiceInfo serviceInfo, int extra) {
+    
+    }
+    
+    @Override
+    void onDisconnect(LelinkServiceInfo serviceInfo, int what, int extra) {
+    
+    }
 };
 ```
