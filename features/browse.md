@@ -4,9 +4,7 @@
 ```java
 mLelinkServiceManager.setOnBrowseListener(mBrowseListener);
 ```
-
-mBrowseListener 为服务状态监听
-
+mBrowseListener 为服务搜索监听
 ```java
 private IBrowseListener BrowserListener = new IBrowseListener() {
 
