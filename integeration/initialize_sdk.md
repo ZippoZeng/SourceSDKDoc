@@ -11,4 +11,4 @@ SDK初始化需要传入三个参数：
 第二个参数是在开发者中心申请的APPKEY；
 第三个参数是在开发者中心申请的APPSECRET
 
-关于APPKEY & APPSECRET 的获取，[1、申请APPKEY & APPSECRET](introduction/register.md)
+关于APPKEY & APPSECRET 的获取，[1、申请APPKEY & APPSECRET](../introduction/register.md)
