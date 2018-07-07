@@ -37,7 +37,7 @@ leLinkPlayer.connect(lelinkServiceInfo);
 
 ```java
 LelinkServiceInfo lelinkServiceInfo = lelinkServiceManager.addQRServiceInfo(qrCodeStr);
-leLinkPlayer.connect(lelinkServiceInfo, mConnectListener);
+leLinkPlayer.connect(lelinkServiceInfo);
 ```
 ## 5) 断开连接
 ```java
