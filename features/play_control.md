@@ -82,7 +82,7 @@ ILelinkPlayerListener playerListener = new ILelinkPlayerListener() {
 };
 lelinkPlayer.setPlayerListener(lelinkPlayerListener);
 ```
-## 2）推送媒体（开始播放）
+## 2）推送媒体(开始播放)
 ```java
 // 实例化播放的媒体信息
 LelinkPlayerInfo lelinkPlayerInfo = new LelinkPlayerInfo();
