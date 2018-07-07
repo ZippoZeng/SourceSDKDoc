@@ -122,11 +122,11 @@ leLlinkPlayer.setVolume(percent);
 ```
 percent（百分比，float类型）的取值范围为0~1
 -->
-##9）增加音量
+##7）增加音量
 ```java
 leLinkPlayer.addVolume();
 ```
-##9）减少音量
+##8）减少音量
 ```java
 leLinkPlayer.subVolume()
 ```
