@@ -42,23 +42,23 @@ mLelinkServiceManager.stopBrowse();
 ```
 
 ## 4）LelinkServiceInfo参数说明
-##name
+###name
 ```java
 lelinkServiceInfo.getName();
 ```
 设备名称
-##ip
+###ip
 ```java
 lelinkServiceInfo.getIp();
 ```
 获取接收端的ip
-##isOneline
+###isOneline
 ```java
 lelinkServiceInfo.isOnLine();
 ```
 代表设备是否在线（指设备是否能连接到）;
 true为在线，false为不在线
-##isConnect
+###isConnect
 ```java
 lelinkServiceInfo.isConnect();
 ```
