@@ -97,11 +97,11 @@ lelinkPlayerInfo.setUrl(url);
 leLinkPlayer.setDataSource(lelinkPlayerInfo);
 leLinkPlayer.start();
 ```
-##3）推送媒体
+##3）暂停
 ```java
 leLinkPlayer.pause();
 ```
-##恢复
+##4）恢复播放
 ```java
 leLinkPlayer.resume();
 ```
