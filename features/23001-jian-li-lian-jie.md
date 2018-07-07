@@ -4,3 +4,4 @@
 ```java
 LelinkPlayer leLinkPlayer = new LelinkPlayer(context);
 ```
+## 2) 设置连接监听器
