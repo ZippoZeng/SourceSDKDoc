@@ -3,7 +3,7 @@
 ```java
 LelinkSetting lelinkSetting = new LelinkSetting.LelinkSettingBuilder(APPKEY, APPSECRET).build();
 ILelinkServiceManager lelinkServiceManager = LelinkServiceManager.getInstance(context);
-lelinkServiceManager .setLelinkSetting(lelinkSetting);
+lelinkServiceManager.setLelinkSetting(lelinkSetting);
 ```
 
 SDK初始化需要传入三个参数：
