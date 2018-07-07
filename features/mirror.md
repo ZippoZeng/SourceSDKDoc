@@ -1,6 +1,7 @@
 #镜像相关
 
 
+## 1）设置镜像开始回调
 
 ## 2）镜像开始
 ```java
@@ -26,8 +27,6 @@ mLelinkPlayer.start();
     - ILelinkMirrorManager.BITRATE_HIGH：高比特率
     - ILelinkMirrorManager.BITRATE_MID：中比特率
     - ILelinkMirrorManager.BITRATE_LOW：低比特率
-
-// setLelinkServiceInfo中的lelinkServiceInfo中的
 
 ## 3）镜像结束
 ```java
