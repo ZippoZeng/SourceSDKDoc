@@ -10,11 +10,7 @@
     * [1\) 先连接，后推送](features/connect/first_connect_after_push.md)
     * [2\) 直接推送](features/connect/direct_push.md)
   * [3、播放控制](features/play_control.md)
-  * [4、其他设置选项](setting/README.md)
-    * [LelinkSetting](setting/LelinkSetting.md)
   * [5、镜像相关](features/mirror.md)
-  * [7、错误码](features/error_code.md)
-  * [8、change log](features/changelog.md)
   * [2、建立连接](features/23001-jian-li-lian-jie.md)
 * [三、增值功能](added_features.md)
 
