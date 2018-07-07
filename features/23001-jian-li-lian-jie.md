@@ -20,3 +20,6 @@ IConnectListener connectListener = new IConnectListener() {
     
 };
 ```
+其中onDisconnect()的what取值为：
+- IConnectListener.CONNECT_INFO_DISCONNECT：连接断开
+- IConnectListener.CONNECT_ERROR_FAILED：连接失败
