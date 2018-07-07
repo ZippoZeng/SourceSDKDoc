@@ -1,9 +1,7 @@
-#播放控制
-##获取连接的设备
-```java
-leLinkPlayer.getConnectServiceInfos();
+#投屏及播放控制
+
 ```
-##播放
+##推送媒体
 ```java
 LelinkPlayerInfo lelinkPlayerInfo = new LelinkPlayerInfo();
 lelinkPlayerInfo.setType(LelinkPlayerInfo.TYPE_VIDEO);
