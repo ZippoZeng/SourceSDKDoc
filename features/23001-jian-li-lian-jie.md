@@ -20,6 +20,8 @@ IConnectListener connectListener = new IConnectListener() {
     
 };
 ```
+LelinkSeviceInfo代表您正在操作的设备信息
+
 其中onDisconnect()的what取值为：
 
 - IConnectListener.CONNECT_INFO_DISCONNECT：连接断开
