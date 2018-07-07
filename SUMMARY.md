@@ -18,5 +18,6 @@
     * [2、LelinkPlayerInfo](features/api/lelinkplayerinfo.md)
   * [7、错误码](features/error_code.md)
   * [8、change log](features/changelog.md)
+  * [2、建立连接](features/23001-jian-li-lian-jie.md)
 * [三、增值功能](added_features.md)
 
