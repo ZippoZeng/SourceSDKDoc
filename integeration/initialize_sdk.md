@@ -1,4 +1,4 @@
-## 1、初始化SDK
+#2、SDK初始化
 
 ```java
 LelinkSetting lelinkSetting = new LelinkSetting.LelinkSettingBuilder(APPKEY, APPSECRET).build();
