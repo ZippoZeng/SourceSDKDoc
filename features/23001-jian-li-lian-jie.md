@@ -36,7 +36,6 @@ leLinkPlayer.connect(lelinkServiceInfo);
 leLinkPlayer.disConnect(lelinkServiceInfo);
 ```
 ## 5) 获取正在连接的设备
-4\) 获得正在连接的设备
 ```java
 leLinkPlayer.getConnectLelinkServiceInfos();
 ```
