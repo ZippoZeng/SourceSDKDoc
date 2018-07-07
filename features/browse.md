@@ -20,7 +20,7 @@ private IBrowseListener BrowserListener = new IBrowseListener() {
 参数代表的意义：
 - resultCode:
        - IBrowseListener.BROWSE_SUCCESS：搜索成功
-       - IBrowseListener.BROWSE_ERROR_AUTH：搜索失败，Auth错误，请检查您的网络设置或AppId和AppSecret
+       - IBrowseListener.BROWSE_ERROR_AUTH：搜索失败，**Auth错误，请检查您的网络设置或AppId和AppSecret**
 - list：搜索出来的结果信息，请根据这个结果信息来显示搜索到的设备列表。
 
 **PS：onBrowse是在子线程工作，以下接口回调，如无特殊说明，都是在子线程回调**
