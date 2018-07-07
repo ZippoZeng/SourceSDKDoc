@@ -13,7 +13,3 @@ lelinkPlayerInfo.setUrl(url);
 leLinkPlayer.setDataSource(lelinkPlayerInfo);
 leLinkPlayer.start();
 ```
-3. 断开连接
-```java
-leLinkPlayer.disConnect(mLelinkServiceInfo);
-```
