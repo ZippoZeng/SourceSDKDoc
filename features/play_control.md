@@ -86,9 +86,9 @@ lelinkPlayer.setPlayerListener(lelinkPlayerListener);
 ```java
 // 实例化播放的媒体信息
 LelinkPlayerInfo lelinkPlayerInfo = new LelinkPlayerInfo();
-// 设置媒体类型：LelinkPlayerInfo.TYPE_VIDEO，
-//              LelinkPlayerInfo.TYPE_AUDIO,
-//              LelinkPlayerInfo.TYPE_IMAGE
+// 设置媒体类型：LelinkPlayerInfo.TYPE_VIDEO：视频
+//              LelinkPlayerInfo.TYPE_AUDIO：音乐
+//              LelinkPlayerInfo.TYPE_IMAGE:图片
 lelinkPlayerInfo.setType(LelinkPlayerInfo.TYPE_VIDEO);
 // 设置本地文件path，支持本地推送
 // lelinkPlayerInfo.setLocalPath(localurl);
