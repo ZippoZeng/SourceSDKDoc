@@ -105,24 +105,31 @@ leLinkPlayer.pause();
 ```java
 leLinkPlayer.resume();
 ```
-##停止
+##5）停止
 ```java
 leLinkPlayer.stop();
 ```
-##播放进度控制
+##6）播放进度控制
 ```java
 leLinkPlayer.seekTo(progress);
 ```
 progress的单位为秒
 
 <!--
-##音量控制
+##7）音量控制
 ```java
 leLlinkPlayer.setVolume(percent);
 ```
 percent（百分比，float类型）的取值范围为0~1
 -->
-
+##9）增加音量
+```java
+leLinkPlayer.addVolume();
+```
+##9）减少音量
+```java
+leLinkPlayer.subVolume()
+```
 
 <!--
 ##是否支持弹幕
@@ -141,15 +148,6 @@ danmukuInfo.setFontsize(size);
 leLinkPlayer.sendDanmuku(danmukuInfo);
 ```
 -->
-##增加音量
-```java
-leLinkPlayer.addVolume();
-```
-##减少音量
-```java
-leLinkPlayer.subVolume()
-```
-
 
 
 
