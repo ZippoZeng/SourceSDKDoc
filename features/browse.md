@@ -19,8 +19,8 @@ private IBrowseListener BrowserListener = new IBrowseListener() {
 ```
 参数代表的意义：
 - resultCode:
-       - IBrowseListener.AUTH_RESULT_SUCCESS
-       - IBrowseListener.AUTH_RESULT_ERROR
+       - IBrowseListener.BROWSE_SUCCESS：
+       - IBrowseListener.BROWSE_ERROR_AUTH：
        
 其中list为搜索出来的结果信息，请根据这个结果信息来显示搜索到的设备列表。
 
