@@ -1,6 +1,6 @@
 # 1、SDK导入及配置
 
-## 1) 导入SDK
+##1）导入SDK
 请将aar到工程中的libs中，
 ![import\_aar](/assets/import_aar.png)
 然后在module的build.gradle中添加以下配置
@@ -23,7 +23,7 @@ compile(name: 'source-sdk', ext: 'aar')
 
 接下来，您就可以调用我们的api了
 
-## 2) 配置权限
+##2）配置权限
 
 如果Android系统为6.0以上，则需要动态申请一些权限：
 
@@ -51,7 +51,7 @@ compile(name: 'source-sdk', ext: 'aar')
 <uses-permission android:name="android.permission.CAPTURE_SECURE_VIDEO_OUTPUT" />
 ```
 
-## 3) 混淆
+##3）混淆
 
 当需要编译打包混淆的时候，投屏SDK已混淆过，无需在对投屏SDK及其依赖的第三方jar包进行混淆，请添加以下乐播配置：
 
@@ -63,6 +63,10 @@ compile(name: 'source-sdk', ext: 'aar')
 ###CyberGarage-upnp
 -keep class org.cybergarage.** { *; }
 -dontwarn org.cybergarage.**
+
+###plist
+-keep class com.dd.plist.** { *; }
+-dontwarn com.dd.plist.**
 
 ###kxml
 -keep class org.kxml2.** { *; }
