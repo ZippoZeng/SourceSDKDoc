@@ -36,7 +36,31 @@ mLelinkServiceManager.browse(int browserType);
 * ILelinkServiceManager.TYPE\_LELINK：仅搜索乐联协议
 <!--* ILelinkServiceManager.TYPE\_DLNA：仅搜索DLNA协议-->
 
-## 3) 停止搜索
+## 3）停止搜索
 ```java
 mLelinkServiceManager.stopBrowse();
 ```
+
+## 4）LelinkServiceInfo参数说明
+##name
+```java
+lelinkServiceInfo.getName();
+```
+设备名称
+##ip
+```java
+lelinkServiceInfo.getIp();
+```
+获取接收端的ip
+##isOneline
+```java
+lelinkServiceInfo.isOnLine();
+```
+代表设备是否在线（指设备是否能连接到）;
+true为在线，false为不在线
+##isConnect
+```java
+lelinkServiceInfo.isConnect();
+```
+代表该设备是否已经连接。
+true为已连接，false为没连接。
