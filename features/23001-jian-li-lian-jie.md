@@ -9,12 +9,12 @@ LelinkPlayer leLinkPlayer = new LelinkPlayer(context);
 IConnectListener connectListener = new IConnectListener() {
 
     @Override
-    void onConnect(LelinkServiceInfo serviceInfo, int extra) {
+    public void onConnect(LelinkServiceInfo serviceInfo, int extra) {
     
     }
     
     @Override
-    void onDisconnect(LelinkServiceInfo serviceInfo, int what, int extra) {
+    public void onDisconnect(LelinkServiceInfo serviceInfo, int what, int extra) {
     
     }
     
@@ -26,3 +26,5 @@ IConnectListener connectListener = new IConnectListener() {
 - IConnectListener.CONNECT_ERROR_FAILED：连接失败
 
 ## 3) 开始连接
+
+## 4) 断开连接
