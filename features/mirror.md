@@ -3,13 +3,13 @@
 
 ## 1）设置镜像监听器
 ```java
-
+lelinkPlayer.setPlayerListener(lelinkPlayerListener);
 ```
 
 ## 2）镜像开始
 ```java
 // 先连接
-mLelinkPlayer.connect(lelinkServiceInfo);
+lelinkPlayer.connect(lelinkServiceInfo);
 
 LelinkPlayerInfo lelinkPlayerInfo = new LelinkPlayerInfo();
 lelinkPlayerInfo.setType(LelinkPlayerInfo.TYPE_MIRROR);
@@ -19,8 +19,8 @@ lelinkPlayerInfo.setLelinkServiceInfo(lelinkServiceInfo);
 lelinkPlayerInfo.setMirrorAudioEnable(true);
 lelinkPlayerInfo.setResolutionLevel(mResolutionLevel);
 lelinkPlayerInfo.setBitRateLevel(mBitrateLevel);
-mLelinkPlayer.setDataSource(lelinkPlayerInfo);
-mLelinkPlayer.start();
+lelinkPlayer.setDataSource(lelinkPlayerInfo);
+lelinkPlayer.start();
 ```
 - ResolutionLevel的取值
     - ILelinkMirrorManager.RESOLUTION_HIGH：1080p分辨率
