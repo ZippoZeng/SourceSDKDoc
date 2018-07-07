@@ -40,4 +40,3 @@ mLelinkServiceManager.browse(int browserType);
 ```java
 mLelinkServiceManager.stopBrowse();
 ```
-
