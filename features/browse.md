@@ -34,3 +34,7 @@ mLelinkServiceManager.browse(int browserType);
 <!--* ILelinkServiceManager.TYPE\_DLNA：仅搜索DLNA协议-->
 
 ## 3) 停止搜索
+```java
+mLelinkServiceManager.stopBrowse();
+```
+
