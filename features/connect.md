@@ -39,11 +39,11 @@ leLinkPlayer.connect(lelinkServiceInfo);
 LelinkServiceInfo lelinkServiceInfo = lelinkServiceManager.addQRServiceInfo(qrCodeStr);
 leLinkPlayer.connect(lelinkServiceInfo, mConnectListener);
 ```
-## 4) 断开连接
+## 5) 断开连接
 ```java
 leLinkPlayer.disConnect(lelinkServiceInfo);
 ```
-## 5) 获取正在连接的设备
+## 6) 获取正在连接的设备
 ```java
 leLinkPlayer.getConnectLelinkServiceInfos();
 ```

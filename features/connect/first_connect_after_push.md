@@ -17,13 +17,3 @@ leLinkPlayer.start();
 ```java
 leLinkPlayer.disConnect(mLelinkServiceInfo);
 ```
-
-## 二维码连接
-
-您还可以通过我们乐播投屏电视版提供的二维码来连接电视
-
-```java
-LelinkServiceInfo lelinkServiceInfo = mLelinkServiceManager.addQRServiceInfo(qrCodeStr);
-leLinkPlayer.connect(lelinkServiceInfo, mConnectListener);
-```
-
