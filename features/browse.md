@@ -18,7 +18,10 @@ private IBrowseListener BrowserListener = new IBrowseListener() {
 };
 ```
 参数代表的意义：
-
+- resultCode:
+       - IBrowseListener.AUTH_RESULT_SUCCESS
+       - IBrowseListener.AUTH_RESULT_ERROR
+       
 其中list为搜索出来的结果信息，请根据这个结果信息来显示搜索到的设备列表。
 
 **PS：onBrowse是在子线程工作，以下接口回调，如无特殊说明，都是在子线程回调**
