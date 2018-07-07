@@ -1,8 +1,9 @@
 #投屏及播放控制
-
+推送的前提是连接成功
 ```
 ##推送媒体
 ```java
+// 实例化播放的媒体信息
 LelinkPlayerInfo lelinkPlayerInfo = new LelinkPlayerInfo();
 lelinkPlayerInfo.setType(LelinkPlayerInfo.TYPE_VIDEO);
 // lelinkPlayerInfo.setLocalPath(localurl);
