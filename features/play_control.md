@@ -90,7 +90,9 @@ LelinkPlayerInfo lelinkPlayerInfo = new LelinkPlayerInfo();
 //              LelinkPlayerInfo.TYPE_AUDIO,
 //              LelinkPlayerInfo.TYPE_IMAGE
 lelinkPlayerInfo.setType(LelinkPlayerInfo.TYPE_VIDEO);
+// 设置本地文件path，支持本地推送
 // lelinkPlayerInfo.setLocalPath(localurl);
+// 设置网络url
 lelinkPlayerInfo.setUrl(url);
 leLinkPlayer.setDataSource(lelinkPlayerInfo);
 leLinkPlayer.start();
