@@ -23,3 +23,14 @@ private IBrowseListener BrowserListener = new IBrowseListener() {
 **PS：onBrowse是在子线程工作，以下接口回调，如无特殊说明，都是在子线程回调**
 
 ## 2) 开始搜索
+```java
+mLelinkServiceManager.browse(int browserType);
+```
+
+其中browserType的取值为以下几种类型:
+
+* ILelinkServiceManager.TYPE\_ALL：可以搜索到乐联和DLNA协议
+* ILelinkServiceManager.TYPE\_LELINK：仅搜索乐联协议
+<!--* ILelinkServiceManager.TYPE\_DLNA：仅搜索DLNA协议-->
+
+## 3) 停止搜索
