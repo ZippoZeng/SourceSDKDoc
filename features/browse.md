@@ -1,12 +1,9 @@
 # 1、服务搜索
 
 ## 1) 设置搜索监听
+
 ```java
-mLelinkServiceManager.setOnBrowseListener(mBrowseListener);
-```
-mBrowseListener 为服务搜索监听
-```java
-private IBrowseListener BrowserListener = new IBrowseListener() {
+private IBrowseListener browserListener = new IBrowseListener() {
 
        @Override
        public void onBrowse(int resultCode, List<LelinkServiceInfo> list) {
@@ -14,6 +11,10 @@ private IBrowseListener BrowserListener = new IBrowseListener() {
        }
 
 };
+```
+browseListener 为服务搜索监听
+```java
+mLelinkServiceManager.setOnBrowseListener(mBrowseListener);
 ```
 参数代表的意义：
 - resultCode:
