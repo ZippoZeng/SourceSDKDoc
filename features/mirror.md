@@ -1,6 +1,6 @@
 #镜像相关
 
-##开始
+## 1）镜像开始
 ```java
 // 先连接
 mLelinkPlayer.connect(lelinkServiceInfo);
@@ -27,8 +27,7 @@ mLelinkPlayer.start();
 
 // setLelinkServiceInfo中的lelinkServiceInfo中的
 
-
-##结束
+## 2）镜像结束
 ```java
 mLelinkPlayer.stop();
 ```
