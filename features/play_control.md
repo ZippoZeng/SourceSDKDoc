@@ -80,6 +80,7 @@ ILelinkPlayerListener playerListener = new ILelinkPlayerListener() {
         }
 
     };
+    
 ```
 ## 2）推送媒体
 ```java
@@ -152,7 +153,7 @@ leLinkPlayer.release();
 
 ##播放控制回调
 ```java
-ILelinkPlayerListener playerListener = new ILelinkPlayerListener() {
+ILelinkPlayerListener lelinkPlayerListener = new ILelinkPlayerListener() {
 
         @Override
         public void onStart() {
@@ -199,7 +200,8 @@ ILelinkPlayerListener playerListener = new ILelinkPlayerListener() {
 
         }
 
-    };
+};
+lelinkPlayer.setPlayerListener(lelinkPlayerListener );
 ```
 
 
