@@ -82,6 +82,13 @@ ILelinkPlayerListener playerListener = new ILelinkPlayerListener() {
 };
 lelinkPlayer.setPlayerListener(lelinkPlayerListener);
 ```
+关于onError的what有下列取值
+- ILelinkPlayerListener.PUSH_ERROR_INIT：推送初始化错误
+- ILelinkPlayerListener.PUSH_ERROR_PLAY：推送播放错误
+- ILelinkPlayerListener.MIRROR_ERROR_INIT：镜像初始化错误
+- ILelinkPlayerListener.MIRROR_ERROR_PREPARE：镜像准备错误
+- ILelinkPlayerListener.MIRROR_ERROR_CODEC：镜像编码错误
+
 ## 2）推送媒体(开始播放)
 ```java
 // 实例化播放的媒体信息
