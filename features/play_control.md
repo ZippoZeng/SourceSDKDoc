@@ -5,12 +5,12 @@
 ```java
 ILelinkPlayerListener playerListener = new ILelinkPlayerListener() {
        
-       /**
+        /**
         * 播放开始
         */
         @Override
         public void onStart() {
-
+        
         }
         
         /**
@@ -79,10 +79,10 @@ ILelinkPlayerListener playerListener = new ILelinkPlayerListener() {
 
         }
 
-    };
-    
+};
+lelinkPlayer.setPlayerListener(lelinkPlayerListener);
 ```
-## 2）推送媒体
+## 2）推送媒体（开始播放）
 ```java
 // 实例化播放的媒体信息
 LelinkPlayerInfo lelinkPlayerInfo = new LelinkPlayerInfo();
@@ -93,7 +93,7 @@ lelinkPlayerInfo.setUrl(url);
 leLinkPlayer.setDataSource(lelinkPlayerInfo);
 leLinkPlayer.start();
 ```
-##暂停
+##3）推送媒体
 ```java
 leLinkPlayer.pause();
 ```
@@ -145,66 +145,6 @@ leLinkPlayer.addVolume();
 ```java
 leLinkPlayer.subVolume()
 ```
-
-##释放
-```java
-leLinkPlayer.release();
-```
-
-##播放控制回调
-```java
-ILelinkPlayerListener lelinkPlayerListener = new ILelinkPlayerListener() {
-
-        @Override
-        public void onStart() {
-
-        }
-
-        @Override
-        public void onPause() {
-
-        }
-
-        @Override
-        public void onCompletion() {
-
-        }
-
-        @Override
-        public void onStop() {
-
-        }
-
-        @Override
-        public void onSeekComplete(int pPosition) {
-
-        }
-
-        @Override
-        public void onInfo(int what, int extra) {
-
-        }
-
-        @Override
-        public void onError(int what, int extra) {
-
-        }
-
-        @Override
-        public void onVolumeChanged(float percent) {
-
-        }
-
-        @Override
-        public void onPositionUpdate(long duration, long position) {
-
-        }
-
-};
-lelinkPlayer.setPlayerListener(lelinkPlayerListener );
-```
-
-
 
 
 
