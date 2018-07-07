@@ -5,7 +5,7 @@
   * [1、申请APPKEY & APPSECRET](introduction/register.md)
   * [2、SDK & demo 下载](introduction/download.md)
 * [二、SDK集成](features/README.md)
-  * [1、集成SDK](features/integrated.md)
+  * [1、SDK导入和工程配置](features/integrated.md)
   * [2、连接服务](features/connect.md)
     * [1\) 先连接，后推送](features/connect/first_connect_after_push.md)
     * [2\) 直接推送](features/connect/direct_push.md)
@@ -19,5 +19,4 @@
   * [7、错误码](features/error_code.md)
   * [8、change log](features/changelog.md)
 * [三、增值功能](added_features.md)
- <!-- * [1、设备管理](added_features/device_manager.md)-->
 
