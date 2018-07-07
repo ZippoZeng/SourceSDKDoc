@@ -8,9 +8,7 @@
   * [1、SDK导入和工程配置](integeration/integeration.md)
   * [2、SDK初始化](integeration/initialize_sdk.md)
 * [三、基础功能使用](features/README.md)
-    * [1\) 先连接，后推送](features/connect/first_connect_after_push.md)
-    * [2\) 直接推送](features/connect/direct_push.md)
-  * [3、播放控制](features/play_control.md)
-  * [5、镜像相关](features/mirror.md)
-  * [2、建立连接](features/23001-jian-li-lian-jie.md)
-
+  * [1、服务搜索](features/browse.md)
+  * [2、建立连接](features/connect.md)
+  * [3、投屏及控制](features/play_control.md)
+  * [4、镜像相关](features/mirror.md)
