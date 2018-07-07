@@ -17,6 +17,7 @@ private IBrowseListener BrowserListener = new IBrowseListener() {
 
 };
 ```
+参数代表的意义：
 
 其中list为搜索出来的结果信息，请根据这个结果信息来显示搜索到的设备列表。
 
