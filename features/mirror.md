@@ -33,5 +33,5 @@ lelinkPlayer.start();
 
 ## 3）镜像结束
 ```java
-mLelinkPlayer.stop();
+lelinkPlayer.stop();
 ```
