@@ -1,4 +1,4 @@
-# 1、申请APPKEY & APPSECRET
+# 1、申请AppId & AppSecrect
 
 1、用户注册
 
