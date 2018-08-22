@@ -4,15 +4,15 @@
 ## 1）设置播控监听
 ```java
 ILelinkPlayerListener playerListener = new ILelinkPlayerListener() {
-       
+
         /**
         * 播放开始
         */
         @Override
         public void onStart() {
-        
+
         }
-        
+
         /**
         * 暂停
         */
@@ -20,7 +20,7 @@ ILelinkPlayerListener playerListener = new ILelinkPlayerListener() {
         public void onPause() {
 
         }
-        
+
         /**
         * 播放完成
         */
@@ -28,7 +28,7 @@ ILelinkPlayerListener playerListener = new ILelinkPlayerListener() {
         public void onCompletion() {
 
         }
-        
+
         /**
         * 播放结束
         */
@@ -36,7 +36,7 @@ ILelinkPlayerListener playerListener = new ILelinkPlayerListener() {
         public void onStop() {
 
         }
-        
+
         /**
         * 进度调节：单位为百分比
         */
@@ -44,7 +44,7 @@ ILelinkPlayerListener playerListener = new ILelinkPlayerListener() {
         public void onSeekComplete(int pPosition) {
 
         }
-        
+
         /**
         * 保留接口
         */
@@ -52,7 +52,7 @@ ILelinkPlayerListener playerListener = new ILelinkPlayerListener() {
         public void onInfo(int what, int extra) {
 
         }
-        
+
         /**
         * 错误回调
         */
@@ -60,7 +60,7 @@ ILelinkPlayerListener playerListener = new ILelinkPlayerListener() {
         public void onError(int what, int extra) {
 
         }
-        
+
         /**
         * 音量变化回调
         */
@@ -68,7 +68,7 @@ ILelinkPlayerListener playerListener = new ILelinkPlayerListener() {
         public void onVolumeChanged(float percent) {
 
         }
-        
+
         /**
         * 播放进度信息回调
         * @param duration 总长度：单位秒
