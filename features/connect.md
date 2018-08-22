@@ -17,7 +17,7 @@ IConnectListener connectListener = new IConnectListener() {
     public void onDisconnect(LelinkServiceInfo serviceInfo, int what, int extra) {
 
     }
-    
+
 };
 ```
 LelinkSeviceInfo代表您正在操作的设备信息
