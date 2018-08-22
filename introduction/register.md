@@ -10,7 +10,7 @@
 
 1\) 新应用appID及秘钥获取
 
-在乐播云使用用户/密码登录后，在应用管理菜单，新增应用，需提供应用包名，平台类型，终端类型，保存后系统自动生成该应用AppID&秘钥，即后面发布投屏服务所用的AppID & AppSecrect。
+在乐播云使用用户/密码登录后，在应用管理菜单，新增应用，需提供应用包名，平台类型，终端类型，保存后系统自动生成该应用AppId&秘钥，即后面发布投屏服务所用的AppId & AppSecrect。
 
 ![](http://cdn.hpplay.com.cn/test/don/_book/assets/import_02.png)
 

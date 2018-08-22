@@ -10,12 +10,12 @@ IConnectListener connectListener = new IConnectListener() {
 
     @Override
     public void onConnect(LelinkServiceInfo serviceInfo, int extra) {
-    
+
     }
-    
+
     @Override
     public void onDisconnect(LelinkServiceInfo serviceInfo, int what, int extra) {
-    
+
     }
     
 };
