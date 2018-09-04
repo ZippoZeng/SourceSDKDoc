@@ -18,7 +18,12 @@ mLelinkPlayer.setInteractionAdListener(interactionAdListener);
 ```
 
 ## 2) 广告播放上报
+```java
+mLelinkPlayer.onAdShow(mAdInfo, status);
+```
 
 ## 3) 广告播放完成上报
-
+```java
+mLelinkPlayer.onAdClosed(mAdInfo, duration, status);
+```
 ## 4) 关于AdInfo参数说明
