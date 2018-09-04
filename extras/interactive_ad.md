@@ -3,7 +3,7 @@
 
 ## 1) 设置监听
 ```java
-InteractionAdListener interactionAdListener = new InteractionAdListener() {
+InteractiveAdListener interactiveAdListener = new InteractiveAdListener() {
 
     @Override
     public void onAdLoaded(AdInfo adInfo) {
@@ -14,7 +14,7 @@ InteractionAdListener interactionAdListener = new InteractionAdListener() {
 ```
 interactionAdListener 为互动广告监听
 ```java
-mLelinkPlayer.setInteractionAdListener(interactionAdListener);
+mLelinkPlayer.setInteractiveAdListener(interactiveAdListener);
 ```
 
 ## 2) 广告播放上报
