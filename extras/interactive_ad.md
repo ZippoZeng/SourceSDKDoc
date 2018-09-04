@@ -17,9 +17,9 @@ interactionAdListener 为互动广告监听
 mLelinkPlayer.setInteractionAdListener(interactionAdListener);
 ```
 
-## 2) 
+## 2) 广告播放上报
+
+## 3) 广告播放完成上报
 
 
-
-
-## 4) 关于AdInfo
+## 4) 关于AdInfo参数说明
