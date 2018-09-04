@@ -21,5 +21,4 @@ mLelinkPlayer.setInteractionAdListener(interactionAdListener);
 
 ## 3) 广告播放完成上报
 
-
 ## 4) 关于AdInfo参数说明
