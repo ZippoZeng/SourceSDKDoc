@@ -31,10 +31,10 @@ status的取值为
 ```java
 mLelinkPlayer.onAdClosed(mAdInfo, duration, status);
 ```
-AdInfo为onAdLoaded方法返回来的值
-
-status的取值为
-- LelinkPlayer.STATUS_SUCCESS
-- LelinkPlayer.STATUS_FAILURE
+- AdInfo为onAdLoaded方法返回来的值
+- duration：广告播放时长
+- status：的取值为
+    - LelinkPlayer.STATUS_SUCCESS
+    - LelinkPlayer.STATUS_FAILURE
 
 ## 4) 关于AdInfo参数说明
