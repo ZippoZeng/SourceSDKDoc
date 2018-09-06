@@ -50,7 +50,7 @@ lelinkServiceInfo.getName();
 lelinkServiceInfo.getIp();
 ```
 获取接收端的ip
-###isOneline
+###isOnLine
 ```java
 lelinkServiceInfo.isOnLine();
 ```
