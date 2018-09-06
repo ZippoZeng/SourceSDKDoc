@@ -14,5 +14,6 @@
   * [4、镜像相关](features/mirror.md)
 * [四、附加功能](extras/README.md)
   * [1、互动广告](extras/interactive_ad.md)
+* [五、FAQ](FAQ.md)
 
 
