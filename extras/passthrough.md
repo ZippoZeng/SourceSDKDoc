@@ -1,5 +1,24 @@
 #5、透传功能
 
+##透传数据回调接口设置
+```java
+mLelinkPlayer.setRelevantInfoListener(new IRelevantInfoListener() {
+
+    @Override
+    public void onSendRelevantInfoResult ( int option, String result){
+        LeLog.d(TAG, "option : " + option + " result: " + result);
+    }
+
+});
+```
+
+不管是主动发起的透传回调还是被动接收的透传数据都会通过onSendRelevantInfoResult方法回调出来
+
+- 接口参数说明
+ - int option：透传类型  
+ - String result：透传的返回结果或者收到的接收端数据
+
+
 ## 1）播放媒资信息
 
  创建一个MediaAssetBean对象然后通过LelinkPlayerInfo的setMediaAsset方法设置进去SDK会自动完成透传
@@ -51,21 +70,3 @@ mLelinkPlayer.sendRelevantInfo(ILelinkPlayerListener.RELEVANCE_DATA, "{\"data\":
    - 透传给接收端SDK还是APP，true为传给SDK,false为传给App
 
 
- ## 4）透传数据回调接口设置
-
-```java
-mLelinkPlayer.setRelevantInfoListener(new IRelevantInfoListener() {
-
-    @Override
-    public void onSendRelevantInfoResult ( int option, String result){
-        LeLog.d(TAG, "option : " + option + " result: " + result);
-    }
-
-});
-```
-
-不管是主动发起的透传回调还是被动接收的透传数据都会通过onSendRelevantInfoResult方法回调出来
-
-- 接口参数说明
- - int option：透传类型  
- - String result：透传的返回结果或者收到的接收端数据
