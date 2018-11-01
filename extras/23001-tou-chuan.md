@@ -43,9 +43,13 @@ public void playNetMediaWithHeader(String url, int type) {
 mLelinkPlayer.sendRelevantInfo(ILelinkPlayerListener.RELEVANCE_DATA, "{\"data\":\"pass through\"}", appId, isSdk);
  ```
 
-  -接口参数说明
-      int option 透传类型  
-      Object... values 第三方传递数据必须依次传递3个参数， 依次是：需要透传的数据、接收端的appid、透传给接收端SDK还是APP
+- 接口参数说明
+
+ - int option 透传类型  
+ - Object... values 第三方传递数据必须依次传递3个参数， 依次是：
+   - 需要透传的数据
+   - 接收端的appId
+   - 透传给接收端SDK还是APP
 
 
  ## 4）透传数据回调接口设置
