@@ -29,8 +29,6 @@ compile(name: 'source-sdk', ext: 'aar')
 如果Android系统为6.0以上，则需要动态申请一些权限：
 
 * android.permission.READ\_PHONE\_STATE
-* android.permission.WRITE\_EXTERNAL\_STORAGE
-* android.permission.ACCESS_FINE_LOCATION
 
 必须要有以上权限，否则会导致SDK功能异常
 
