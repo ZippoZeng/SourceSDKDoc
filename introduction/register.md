@@ -1,25 +1,17 @@
-# 1、申请AppId & AppSecrect
-
-1、用户注册
-
-首次接入乐播SDK需在[http://cloud.hpplay.cn/](http://cloud.hpplay.cn/) 进行注册，注册成功后需等待后台审核， 我们会在24小时内处理。
-
-![register](http://cdn.hpplay.com.cn/test/don/_book/assets/import_01.png)
-
-2、应用管理
-
-1\) 新应用appID及秘钥获取
-
-在乐播云使用用户/密码登录后，在应用管理菜单，新增应用，需提供应用包名，平台类型，终端类型，保存后系统自动生成该应用AppId&秘钥，即后面发布投屏服务所用的AppId & AppSecrect。
-
-![](http://cdn.hpplay.com.cn/test/don/_book/assets/import_02.png)
-
-![](http://cdn.hpplay.com.cn/test/don/_book/assets/import_03.png)
-
-如果登录后无法操作，表示还未通过审核，请耐心等待。
-
-2\) 已有应用秘钥更新
-
-在列表找到需要更新秘钥的应用或根据应用名过滤找到应用，点击“更新”操作，可更新应用秘钥，更新后旧秘钥将无法认证使用。每月仅提供3次秘钥更新操作。
-
-![](http://cdn.hpplay.com.cn/test/don/_book/assets/import_04.png)
+# 一、申请AppId & AppSecrect
+在使用乐播投屏的SDK之前，请先到开发者中心注册为开发者。
+输入您的产品信息，获取AppId & AppSecrect。
+## 1、申请AppId & AppSecrect
+###1）用户注册及资质认证
+首次接入乐播SDK需在http://cloud.hpplay.cn/ 进行注册，注册成功后登录系统，点击“资质认证”按钮，提交认证资料，我们会在24小时进行认证审核并通过短信提醒您认证结果。通过审核后即可创建您的投屏应用。
+ ![注册](/assets/lebo_cloud_register.png)
+ ![资产认证](/assets/lebo_cloud_certification.png)
+### 2）获取AppID& AppSecrect
+通过认证后，登录乐播云，点击左侧“应用管理”菜单，打开后点击 “新增”按钮，在弹窗页面输入相关信息，“保存”后应用添加成功。在列表页面可查看 AppId、AppSecrect，即后面发布投屏服务所用的AppId & AppSecrect。
+AppSecrect如需要更新，请联系乐播技术支持 0755-33942655。注意：AppSecrect更新后新AppSecrect即时生效，原AppSecrect相关应用立即无法使用！
+![获取AppID](/assets/lebo_cloud_app_manager.png)
+![AppSecrect](/assets/lebo_cloud_app_manager_2.png)
+##2、SDK & demo 下载
+创建应用之后，点击该应用右侧“下载地址”按钮，即可获取应用包下载地址。若提示“有新版本”，则可以更新版本后再下载。
+![下载地址](/assets/lebo_cloud_download_1.png)
+![下载地址-2](/assets/lebo_cloud_download_2.png)
