@@ -1,5 +1,5 @@
-# 2、SDK & demo 下载
+#2、SDK & demo 下载
 
-创建应用之后进入下载菜单里对应的终端类型页面，会看到已创建的应用信息，从而可下载该应用包。若应用状态显示“有新版本”，则可以更新版本后再下载。
-
-![download](/assets/download.jpg)
+创建应用之后，点击该应用右侧“下载地址”按钮，即可获取应用包下载地址。若提示“有新版本”，则可以更新版本后再下载。
+![下载地址](/assets/lebo_cloud_download_1.png)
+![下载地址-2](/assets/lebo_cloud_download_2.png)
