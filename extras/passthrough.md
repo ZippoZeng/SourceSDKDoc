@@ -15,7 +15,7 @@ mLelinkPlayer.setRelevantInfoListener(new IRelevantInfoListener() {
 不管是主动发起的透传回调还是被动接收的透传数据都会通过onSendRelevantInfoResult方法回调出来
 
 - 接口参数说明
- - int option：透传类型  
+ - int option：透传类型
  - String result：透传的返回结果或者收到的接收端数据
 
 
